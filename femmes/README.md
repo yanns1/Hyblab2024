@@ -1,20 +1,20 @@
 # Descriptif du projet
 
-Porteur de projet :
+Porteur de projet : Les Autres Possibles
 
-Sujet :
+Sujet : Sportives à la une
 
-Nom d'équipe :
+Nom d'équipe : Femmes
 
 Participants : 
 
-- AGR :
+- AGR : Léa Sautejeau, Alex Desnoë
 
-- EPJT :
+- EPJT : Annabelle Boos
 
-- Polytech :  
+- Polytech : Yann Salmon, Léo Brigardis, Wafa Harir, Rania Abdelkhaleq
 
-- SciencesPo : 
+- SciencesPo :  Laurine Le Goff
 
 
 
