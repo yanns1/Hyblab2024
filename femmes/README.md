@@ -12,7 +12,7 @@ Participants :
 
 - EPJT : Annabelle Boos
 
-- Polytech : Yann Salmon, Léo Brigardis, Wafa Harir, Rania Abdelkhaleq
+- Polytech : Yann Salmon, Léo Brigardis, Wafa Harir, Rania Abdelkhaleq, Tom Rintz
 
 - SciencesPo :  Laurine Le Goff
 
