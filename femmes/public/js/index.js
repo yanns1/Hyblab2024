@@ -4,6 +4,7 @@
 const swiper = new Swiper("#mySwiper", {
   direction: "vertical",
   mousewheel: true,
+  // https://swiperjs.com/swiper-api#pagination-parameters
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -19,6 +20,9 @@ swiper.on("slideChange", function () {
     case 1:
       initSlide2();
       break;
+    case 2:
+      initSlide3();
+      break;
   }
 });
 
@@ -27,6 +31,7 @@ swiper.on("slideChange", function () {
 setTimeout(() => { 
   // fade out the loader "slide"
   // and send it to the back (z-index = -1)
+
   anime({
     delay: 1000,
     targets: '#loader',
@@ -34,6 +39,7 @@ setTimeout(() => {
     'z-index' : -1,
     easing: 'easeOutQuad',
   });
+
   // Init first slide
   initSlide1();
-}, 1000);
+}, 0);
