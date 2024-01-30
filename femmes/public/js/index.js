@@ -8,6 +8,7 @@ const swiper = new Swiper("#mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  nested: true,
 });
 
 swiper.on("slideChange", function () {

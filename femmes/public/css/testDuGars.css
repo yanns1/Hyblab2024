@@ -1,140 +1,34 @@
-/* ------- Important ! Please at least keep the last part of this CSS ----------- */
-/* ------- that adapts content width and height so that aspect ratio  ----------- */
-/* ------- is kept between 9/16 a,d 3/4 (portait orientation)         ----------- */
-
-/* Normalize margin and padding to ease elements positioning */
-*{
-    padding:0;
-    margin:0;
+html, body {
+    position: relative;
+    height: 100%;
 }
 
-body{
-    background-color: black;
-    color: white;
-    overflow: hidden;   /* to avoid slider bugs on some browsers */
-    font-family: sans-serif;
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
-/* -------------- Loader --------------*/
-#loader{
-    z-index: 2;
-    position:absolute;
-}
-
-#loader-img{
-    top:40%;
-    left:40%;
-    position: absolute;
-}
-
-#loader-text{
-    text-align: center;
-    font-size: 25%;
-    position: absolute;
-    top:60%;
-    width: 100%
-}
-/* -------------- End of Loader --------------*/
-
-/* Swiper slider. Need to fill the container */
-#mySwiper{
-    width: 100%;
-    height:100%;
-    position: absolute;
-}
-
-/* Style pour toutes les slides avec défilement vertical */
-.swiper-slide {
-  overflow-y: scroll; /* Permet le défilement vertical */
-  max-height: 100vh;  /* Ajustez la hauteur maximale selon vos besoins */
-}
-
-/* Style pour le contenu défilant à l'intérieur de chaque slide */
-.swiper-slide .scrollable-content {
-  padding: 50px;      /* Ajoutez un espacement intérieur pour plus de lisibilité */
-  color: white;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Restez cohérent avec vos autres styles pour le texte */
-.swiper-slide .scrollable-content p {
-  margin-bottom: 20px; /* Ajoutez un espacement entre les paragraphes */
-}
-
-
-/* Ajouter de l'espace entre les bullets de la pagination */
-.swiper-pagination-bullet {
-    margin: 20px !important; /* Ajustez la valeur selon votre préférence d'espacement */
-}
-
-/* white navigation bullets */
-.swiper-pagination-bullet-active {
-    background-color: white !important;
-}
-
-/* Move swiper pagination to the left of the screen */
-.swiper-pagination {
-    left: 10px !important;
-}
-
-/* the slides and the loader should fill the whole 9:16 zone */
-.swiper-wrapper section, #loader{
-    background-color: dodgerblue;
+.swiper {
     width: 100%;
     height: 100%;
 }
 
-/* Most of the elements in this demo are absolute positioned with percentages */
-#first-slide header, #second-slide header{
-    text-align: center;
-    width: 100%;
-    top: 10%;
-    position: absolute;
-    font-size: 30%;
-    z-index: 2;
+.swiper-slide {
+    padding: 30px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: auto;
 }
 
-#logo-hyblab{
-    text-align: center;
-    width: 50%;
-    left: 50%; /* center the logo, in interaction with the negative margin-left */
-    top: 50%;
-    margin-left:-25%; /* this is half the width */
-    margin-top:calc(-7.5% * 9 / 16 ); /* margins are relative to the element width... :-( */
-    position: absolute;
-    font-size: 50%;
-    z-index: 2;
-    cursor: pointer;
-}
-
-/* Last slide image is centered */
-#img-fini{
-    width: 70%;
-    left: 50%; /* center the logo, in interaction with the negative margin-left */
-    top: 40%;
-    position: absolute;
-    margin-left:-35%; /* this is half the width */
-    margin-top:calc(-25% * 9 / 16 ); /* margins are relative to the element width... :-( */
-}
-
-main > section{
-    background-image: url('../img/background.svg');
-    background-size: 100% auto; /* background is full width and height is proportional to width */
-    background-position: bottom; /* background is bottom aligned */
-}
-
-/* Footer of last slide is at the bottom and content is centered */
-#first-slide footer{
-    bottom: 5%;
-    position: absolute;
-    box-sizing: border-box; /* So that padding is not added to width (and width: 100% works) */
-    width: 100%; /* could also use  width: calc(100% - 2em) if not using box-sizing */
-    font-size: 20%;
-    text-align: center;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
 
 /* ---------- Positioning of logos on the last slide -------------------- */
@@ -185,6 +79,58 @@ main > section{
   {
     height: 2em;
   }
+
+
+/* Most of the elements in this demo are absolute positioned with percentages */
+#first-slide header, #second-slide header{
+    text-align: center;
+    width: 100%;
+    top: 10%;
+    position: absolute;
+    font-size: 30%;
+    z-index: 2;
+}
+
+#logo-hyblab{
+    text-align: center;
+    width: 50%;
+    left: 50%; /* center the logo, in interaction with the negative margin-left */
+    top: 50%;
+    margin-left:-25%; /* this is half the width */
+    margin-top:calc(-7.5% * 9 / 16 ); /* margins are relative to the element width... :-( */
+    position: absolute;
+    font-size: 50%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Last slide image is centered */
+#img-fini{
+    width: 70%;
+    left: 50%; /* center the logo, in interaction with the negative margin-left */
+    top: 40%;
+    position: absolute;
+    margin-left:-35%; /* this is half the width */
+    margin-top:calc(-25% * 9 / 16 ); /* margins are relative to the element width... :-( */
+}
+
+main > section{
+    background-image: url('../img/background.svg');
+    background-size: 100% auto; /* background is full width and height is proportional to width */
+    background-position: bottom; /* background is bottom aligned */
+}
+
+/* Footer of last slide is at the bottom and content is centered */
+#first-slide footer{
+    bottom: 5%;
+    position: absolute;
+    box-sizing: border-box; /* So that padding is not added to width (and width: 100% works) */
+    width: 100%; /* could also use  width: calc(100% - 2em) if not using box-sizing */
+    font-size: 20%;
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}   
 
 /* ---------- Important media queries for easy responsive content :-) ----------------- */
 /* Whatever the device used, the content will be displayed full width and height if      */
