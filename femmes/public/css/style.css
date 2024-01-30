@@ -22,7 +22,7 @@ body {
   top: 0;
   height: 100vh;
   width: 90vw;
-  left: -90vw;
+  right: -90vw;
   background: #2f2f2f;
   font-size: 25%;
   z-index: 20;
@@ -30,7 +30,7 @@ body {
 
 .drawer-button {
   position: absolute;
-  left: 100%;
+  right: 100%;
   height: 60px; 
   width: 20px;
   background: wheat; 
@@ -84,6 +84,11 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.swiper-pagination {
+  --swiper-pagination-right: auto;
+  --swiper-pagination-left: 8px;
 }
 
 /* white navigation bullets */

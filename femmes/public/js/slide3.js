@@ -5,7 +5,7 @@ const initSlide3 = function () {
 
   // Reset attributes
   for (let i = 0; i < drawers.length; i++) {
-    drawers[i].setAttribute("style", "left: -90vw; background: #2f2f2f;");
+    drawers[i].setAttribute("style", "right: -90vw; background: #2f2f2f;");
   }
 
   const button = document.querySelector(".drawer-button");
@@ -20,7 +20,7 @@ const initSlide3 = function () {
 
     t1.add({
       targets: ".drawer",
-      left: "0vw",
+      right: "0vw",
       backgroundColor: "#ff0000",
     })
     t2.add({
@@ -40,7 +40,7 @@ const initSlide3 = function () {
 
     t1.add({
       targets: ".drawer",
-      left: "-90vw",
+      right: "-90vw",
       backgroundColor: "#2f2f2f",
       easing: "easeInOutQuad",
     });
