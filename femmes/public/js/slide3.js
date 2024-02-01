@@ -1,12 +1,10 @@
 "use strict";
 
 const initSlide3 = function () {
-  const drawers = document.querySelectorAll(".drawer");
+  const drawer = document.querySelector("#slide3 .drawer");
 
   // Reset attributes
-  for (let i = 0; i < drawers.length; i++) {
-    drawers[i].setAttribute("style", "right: -90vw; background: #2f2f2f;");
-  }
+  drawer.setAttribute("style", "right: -90vw; background: #2f2f2f;");
 
   const button = document.querySelector(".drawer-button");
   const overlay = document.querySelector(".overlay");
@@ -22,15 +20,15 @@ const initSlide3 = function () {
       targets: ".drawer",
       right: "0vw",
       backgroundColor: "#ff0000",
-    })
+    });
     t2.add({
-        targets: ".overlay",
-        opacity: 1,
-        zIndex: 10,
+      targets: ".overlay",
+      opacity: 1,
+      zIndex: 10,
     });
   });
 
-  overlay.addEventListener("click", function(event) {
+  overlay.addEventListener("click", function (event) {
     let t1 = anime.timeline({
       easing: "easeInOutQuad",
     });
@@ -45,9 +43,9 @@ const initSlide3 = function () {
       easing: "easeInOutQuad",
     });
     t2.add({
-        targets: ".overlay",
-        opacity: 0,
-        zIndex: -1,
+      targets: ".overlay",
+      opacity: 0,
+      zIndex: -1,
     });
   });
 };
