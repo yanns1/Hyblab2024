@@ -18,16 +18,28 @@
 * {
   padding: 0;
   margin: 0;
+
+  /* Color palette */
+  --background-color: #f7f7f7;
+  --orange: #ff871e;
+  --light-grey: #e8dfdf;
+  --purple: #554595;
+  --red: #dc1e19;
+  --yellow: #ebc015;
+  --black: #000000;
+  --pink: #ec6ea6;
+  --blue: #5bc5f2;
+  --green: #49b070;
 }
 
 body {
-  background-color: black;
+  background-color: var(--black);
   overflow: hidden; /* to avoid slider bugs on some browsers */
   font-family: sans-serif;
 }
 
 #container {
-  background-color: #f7f7f7;
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -111,7 +123,7 @@ p {
 #sous-titre {
   font-size: 22px;
   line-height: 28px;
-  color: #5bc5f2;
+  color: var(--blue);
   text-align: center;
 }
 
@@ -123,12 +135,12 @@ p {
 }
 
 #paragraphe-slide1 {
-  color: #5bc5f2;
+  color: var(--blue);
   font-size: 22px;
 }
 
 #pink-title {
-  color: #ed6ea7;
+  color: var(--pink);
 }
 
 .title {
@@ -146,36 +158,36 @@ p {
 }
 
 #slide2 .title {
-  color: #5bc5f2;
+  color: var(--blue);
 }
 
 /* ========================================================================== */
 /* SLIDE 3 */
 /* ========================================================================== */
 #slide3 .title {
-  color: #ed6ea7;
+  color: var(--pink);
 }
 
 /* ========================================================================== */
 /* SLIDE 4 */
 /* ========================================================================== */
 #slide4 .title {
-  color: #fadc00;
+  color: var(--yellow);
 }
 
 #slide4 .subtitle {
-  color: #fadc00;
+  color: var(--yellow);
 }
 
 /* ========================================================================== */
 /* SLIDE 5 */
 /* ========================================================================== */
 #slide5 .title {
-  color: #e6331b;
+  color: var(--red);
 }
 
 #slide5 > p {
-  color: #e6331b;
+  color: var(--red);
   font-size: 22px;
   line-height: 28px;
   text-align: center;
@@ -191,7 +203,7 @@ p {
 /* SLIDE 6 */
 /* ========================================================================== */
 #slide6 .title {
-  color: #554596;
+  color: var(--purple);
 }
 
 /* ========================================================================== */
@@ -212,12 +224,12 @@ p {
 /* } */
 
 #date2022 {
-  color: #49b170;
+  color: var(--green);
   text-align: center;
 }
 
 #paragraph2022 {
-  color: #49b170;
+  color: var(--green);
   font-size: 22px;
   line-height: 28px;
   text-align: center;
@@ -234,7 +246,7 @@ p {
 }
 
 #portrait2022 {
-  color: #49b170;
+  color: var(--green);
   float: left;
   padding-top: 20px;
 }
@@ -268,12 +280,12 @@ p {
 /* SLIDE 10 */
 /* ========================================================================== */
 #bilan {
-  color: #ffa04b;
+  color: var(--orange);
   text-align: center;
 }
 
 #bilan-paragraph {
-  color: #ffa04b;
+  color: var(--orange);
   text-align: center;
   font-size: 22px;
   line-height: 28px;
