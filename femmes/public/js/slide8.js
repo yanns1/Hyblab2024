@@ -1,7 +1,7 @@
 "use strict";
 
-const initSlide8 = function(){
-    const drawer = document.querySelector("#slide8 .drawer");
+const initSlide8 = function () {
+  const drawer = document.querySelector("#slide8 .drawer");
 
   // Reset attributes
   drawer.setAttribute("style", "right: -90vw; background: #2f2f2f;");

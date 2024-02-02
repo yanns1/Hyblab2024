@@ -1,4 +1,3 @@
 "use strict";
 
-const initSlide3 = function(){
-};
+const initSlide3 = function () {};

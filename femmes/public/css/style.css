@@ -1,7 +1,6 @@
-/* ------- Important ! Please at least keep the last part of this CSS ----------- */
-/* ------- that adapts content width and height so that aspect ratio  ----------- */
-/* ------- is kept between 9/16 a,d 3/4 (portait orientation)         ----------- */
-
+/* ========================================================================== */
+/* FONT FACES */
+/* ========================================================================== */
 @font-face {
   font-family: "Gopher";
   src: url("../data/font/GopherText-Regular.ttf");
@@ -9,9 +8,12 @@
 
 @font-face {
   font-family: "Gopher Bold";
-  src: url("../data/font/GopherText-Bold.ttf")
+  src: url("../data/font/GopherText-Bold.ttf");
 }
 
+/* ========================================================================== */
+/* GLOBAL */
+/* ========================================================================== */
 /* Normalize margin and padding to ease elements positioning */
 * {
   padding: 0;
@@ -42,7 +44,7 @@ h2 {
   margin: 0px;
 }
 
-h3{
+h3 {
   text-align: center;
   font-family: Helvetica;
   font-size: 13px;
@@ -58,71 +60,9 @@ p {
   text-align: center;
 }
 
-#personnage-victoire {
-  width: 550px;
-  height: 422px;
-}
-
-#sous-titre {
-  font-size: 22px;
-  line-height: 28px;
-  color: #5bc5f2;
-  text-align: center;
-}
-
-#logo-disposition{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 103px;
-}
-
-#paragraphe-slide1{
-  color: #5BC5F2;
-  font-size: 22px;
-}
-
-#pink-title {
-  color: #ed6ea7;
-}
-
-.title {
-  text-align: center;
-}
-
-#slide2 .victoire-gif {
-  width: 100%;
-  height: auto;
-  position: relative; 
-  top: -200px;
-}
-
-#slide2 .title{
-  color: #5bc5f2;
-}
-
-#slide3 .title {
-  color: #ed6ea7;
-}
-/* ---------- Slide 4 ----------*/
-#slide4 .title {
-  color: #fadc00;
-}
-
-#slide4 .subtitle {
-  color: #fadc00
-}
-
-/*-------- Fin Slide 4 ---------*/
-
-#slide5 .title {
-  color: #e6331b;
-}
-
-#slide6 .title {
-  color: #554596;
-}
-
+/* ========================================================================== */
+/* SWIPER */
+/* ========================================================================== */
 .swiper-slide {
   overflow: hidden;
 }
@@ -139,10 +79,124 @@ p {
   height: auto;
 }
 
-.swaper-slide header {
+.swiper-slide header {
   padding: 30px 20px;
 }
 
+#mySwiper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.swiper-pagination {
+  --swiper-pagination-right: auto;
+  --swiper-pagination-left: 10px;
+  --swiper-pagination-bullet-vertical-gap: 10px;
+}
+
+/* white navigation bullets */
+.swiper-pagination-bullet-active {
+  background-color: #ffa04b !important;
+}
+
+/* ========================================================================== */
+/* SLIDE 1 */
+/* ========================================================================== */
+#personnage-victoire {
+  width: 550px;
+  height: 422px;
+}
+
+#sous-titre {
+  font-size: 22px;
+  line-height: 28px;
+  color: #5bc5f2;
+  text-align: center;
+}
+
+#logo-disposition {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 103px;
+}
+
+#paragraphe-slide1 {
+  color: #5bc5f2;
+  font-size: 22px;
+}
+
+#pink-title {
+  color: #ed6ea7;
+}
+
+.title {
+  text-align: center;
+}
+
+/* ========================================================================== */
+/* SLIDE 2 */
+/* ========================================================================== */
+#slide2 .victoire-gif {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -200px;
+}
+
+#slide2 .title {
+  color: #5bc5f2;
+}
+
+/* ========================================================================== */
+/* SLIDE 3 */
+/* ========================================================================== */
+#slide3 .title {
+  color: #ed6ea7;
+}
+
+/* ========================================================================== */
+/* SLIDE 4 */
+/* ========================================================================== */
+#slide4 .title {
+  color: #fadc00;
+}
+
+#slide4 .subtitle {
+  color: #fadc00;
+}
+
+/* ========================================================================== */
+/* SLIDE 5 */
+/* ========================================================================== */
+#slide5 .title {
+  color: #e6331b;
+}
+
+#slide5 > p {
+  color: #e6331b;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#slide5 .tevi {
+  position: relative;
+  align-content: center;
+}
+
+/* ========================================================================== */
+/* SLIDE 6 */
+/* ========================================================================== */
+#slide6 .title {
+  color: #554596;
+}
+
+/* ========================================================================== */
+/* SLIDE 7 */
+/* ========================================================================== */
 #slide7 p {
   padding: 0px 20px;
 }
@@ -157,8 +211,78 @@ p {
 /*   background-color: red; */
 /* } */
 
-/* -------------- Drawer --------------*/
+#date2022 {
+  color: #49b170;
+  text-align: center;
+}
 
+#paragraph2022 {
+  color: #49b170;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+}
+
+#text2022 {
+  padding-top: 20px;
+}
+
+#text-portrait {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#portrait2022 {
+  color: #49b170;
+  float: left;
+  padding-top: 20px;
+}
+
+#text-slide7-8 {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+#chloe {
+  padding-top: 20px;
+  max-width: 100%;
+  position: relative;
+  float: right;
+}
+
+/* ========================================================================== */
+/* SLIDE 8 */
+/* ========================================================================== */
+/* TODO */
+
+/* ========================================================================== */
+/* SLIDE 9 */
+/* ========================================================================== */
+/* TODO */
+
+/* ========================================================================== */
+/* SLIDE 10 */
+/* ========================================================================== */
+#bilan {
+  color: #ffa04b;
+  text-align: center;
+}
+
+#bilan-paragraph {
+  color: #ffa04b;
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+  padding-top: 20px;
+}
+
+/* ========================================================================== */
+/* DRAWER */
+/* ========================================================================== */
 .drawer {
   position: absolute;
   top: 0;
@@ -182,77 +306,7 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 0;
   background-color: red;
-  /* border-bottom-left-radius: 10px; */
-  /* border-top-left-radius: 10px; */
 }
-
-/* -------------- Slides 05 --------------*/
-
-#slide5 > p {
-  color: #e6331b;
-  font-size: 22px;
-  line-height: 28px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-#slide5 .tevi {
-    position: relative;
-    align-content: center;
-}
-
-
-/* -------------- Slide 07 et 08 : Date 2022 ----------*/
-
-#date2022 {
-  color: #49b170;
-  text-align: center;
-}
-#paragraph2022 {
-  color: #49b170;
-  font-size: 22px;
-  line-height: 28px;
-  text-align: center;
-}
-#text2022 {
-  padding-top: 20px;
-}
-#bilan {
-  color: #ffa04b;
-  text-align: center;
-}
-#bilan-paragraph {
-  color: #ffa04b;
-  text-align: center;
-  font-size: 22px;
-  line-height: 28px;
-  padding-top: 20px;
-}
-#text-portrait {
-  text-align: center;
-  font-style: italic;
-  font-weight: bold;
-}
-#portrait2022 {
-  color: #49b170;
-  float: left;
-  padding-top: 20px;
-}
-#text-slide7-8 {
-  padding-top: 60px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: justify;
-}
-#chloe {
-  padding-top: 20px;
-  max-width: 100%;
-  position: relative;
-  float: right;
-}
-
-/* -------------- Overlay --------------*/
 
 .overlay {
   position: absolute;
@@ -267,7 +321,9 @@ p {
   font-size: 25%;
 }
 
-/* -------------- Loader --------------*/
+/* ========================================================================== */
+/* LOADER */
+/* ========================================================================== */
 #loader {
   z-index: 2;
   position: absolute;
@@ -286,24 +342,6 @@ p {
   top: 60%;
   width: 100%;
 }
-/* -------------- End of Loader --------------*/
-
-#mySwiper {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.swiper-pagination {
-  --swiper-pagination-right: auto;
-  --swiper-pagination-left: 10px;
-  --swiper-pagination-bullet-vertical-gap: 10px;
-}
-
-/* white navigation bullets */
-.swiper-pagination-bullet-active {
-  background-color: #ffa04b !important;
-}
 
 /* the slides and the loader should fill the whole 9:16 zone */
 #loader {
@@ -312,7 +350,9 @@ p {
   height: 100%;
 }
 
-/* ---------- Important media queries for easy responsive content :-) ----------------- */
+/* ========================================================================== */
+/* MEDIA QUERIES */
+/* ========================================================================== */
 /* Whatever the device used, the content will be displayed full width and height if      */
 /* the aspect ratio is between 3/4 and 9/16. If not it is locked to either 3/4 or 9/16  */
 

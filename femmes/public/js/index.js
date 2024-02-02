@@ -64,9 +64,6 @@ window.onload = function () {
       case 10:
         initSlide11();
         break;
-      case 11:
-        initSlide12();
-        break;
     }
   });
 
@@ -84,7 +81,6 @@ window.onload = function () {
 
   for (let i = 0; i < scrollSwipers.length; i++) {
     scrollSwipers[i].on("toEdge", () => {
-      console.log("toEdge");
       mainSwiper.mousewheel.enable();
     });
   }
