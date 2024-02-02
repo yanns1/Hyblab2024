@@ -94,7 +94,18 @@ p {
 }
 
 .scroll-swiper .swiper-slide {
-  padding: 10px;
+  padding: 0px 20px 30px;
+  box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+  height: auto;
+}
+
+.swaper-slide header {
+  padding: 30px 20px;
+}
+
+#slide7 p {
+  padding: 0px 20px;
 }
 
 /* -------------- Drawer --------------*/
