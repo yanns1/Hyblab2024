@@ -4,7 +4,12 @@
 
 @font-face {
   font-family: "Gopher";
-  src: url("../data/font/GopherText-Light.ttf");
+  src: url("../data/font/GopherText-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gopher Bold";
+  src: url("../data/font/GopherText-Bold.ttf")
 }
 
 /* Normalize margin and padding to ease elements positioning */
@@ -58,14 +63,25 @@ p {
   text-align: center;
 }
 
-#pink-title {
+.title{
+  text-align: center;
+}
+
+#slide3 .title {
   color: #ed6ea7;
 }
+
+#slide6 .title{
+  color: #554596;
+}
+
+
 
 .swiper {
   width: 100%;
   height: 100%;
 }
+
 
 .swiper-slide {
   /* Il faut toutes les propriétés ci-dessous pour que l'évènement toEdge */
@@ -151,14 +167,17 @@ p {
   position: absolute;
 }
 
+
+
 .swiper-pagination {
   --swiper-pagination-right: auto;
   --swiper-pagination-left: 8px;
+  --swiper-pagination-bullet-vertical-gap: 10px; /*Pour changer la distance entre deux bullet */
 }
 
 /* white navigation bullets */
 .swiper-pagination-bullet-active {
-  background-color: white !important;
+  background-color: #FFA04B !important;
 }
 
 /* the slides and the loader should fill the whole 9:16 zone */
