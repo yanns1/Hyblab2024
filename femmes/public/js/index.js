@@ -17,6 +17,20 @@ function setPaginationBulletActiveColor(activeSlide) {
   root.style.setProperty("--swiper-pagination-color", slideColor[activeSlide]);
 }
 
+function setPaginationBulletActiveSize(
+  prevPaginationBulletActive,
+  paginationBulletActive,
+) {
+  // Change back the size of previous active slide: make it smaller
+  prevPaginationBulletActive.setAttribute(
+    "style",
+    "height: var(--swiper-pagination-bullet-size); width: var(--swiper-pagination-bullet-size);",
+  );
+
+  // Change size of active slide: make it bigger
+  paginationBulletActive.setAttribute("style", "height: 12px; width: 12px;");
+}
+
 window.onload = function () {
   const mainSwiper = new Swiper(".main-swiper", {
     direction: "vertical",
@@ -46,8 +60,26 @@ window.onload = function () {
     );
   }
 
+  let paginationBulletActive = document.querySelector(
+    ".swiper-pagination-bullet-active",
+  );
+  let prevPaginationBulletActive = paginationBulletActive;
+  setPaginationBulletActiveColor(mainSwiper.activeIndex);
+  setPaginationBulletActiveSize(
+    prevPaginationBulletActive,
+    paginationBulletActive,
+  );
+
   mainSwiper.on("slideChange", function () {
+    prevPaginationBulletActive = paginationBulletActive;
+    paginationBulletActive = document.querySelector(
+      ".swiper-pagination-bullet-active",
+    );
     setPaginationBulletActiveColor(mainSwiper.activeIndex);
+    setPaginationBulletActiveSize(
+      prevPaginationBulletActive,
+      paginationBulletActive,
+    );
 
     switch (mainSwiper.activeIndex) {
       case 0:
