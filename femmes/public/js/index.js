@@ -1,5 +1,22 @@
 "use strict";
 
+const slideColor = [
+  "var(--blue)",
+  "var(--orange)",
+  "var(--pink)",
+  "var(--yellow)",
+  "var(--red)",
+  "var(--purple)",
+  "var(--green)",
+  "var(--green)",
+  "var(--orange)",
+];
+
+function setPaginationBulletActiveColor(activeSlide) {
+  const root = document.documentElement;
+  root.style.setProperty("--swiper-pagination-color", slideColor[activeSlide]);
+}
+
 window.onload = function () {
   const mainSwiper = new Swiper(".main-swiper", {
     direction: "vertical",
@@ -30,6 +47,8 @@ window.onload = function () {
   }
 
   mainSwiper.on("slideChange", function () {
+    setPaginationBulletActiveColor(mainSwiper.activeIndex);
+
     switch (mainSwiper.activeIndex) {
       case 0:
         initSlide1();
