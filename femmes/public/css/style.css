@@ -14,11 +14,7 @@
 /* ========================================================================== */
 /* GLOBAL */
 /* ========================================================================== */
-/* Normalize margin and padding to ease elements positioning */
-* {
-  padding: 0;
-  margin: 0;
-
+:root {
   /* Color palette */
   --background-color: #f7f7f7;
   --orange: #ff871e;
@@ -30,6 +26,12 @@
   --pink: #ec6ea6;
   --blue: #5bc5f2;
   --green: #49b070;
+}
+
+/* Normalize margin and padding to ease elements positioning */
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -105,11 +107,6 @@ p {
   --swiper-pagination-right: auto;
   --swiper-pagination-left: 10px;
   --swiper-pagination-bullet-vertical-gap: 10px;
-}
-
-/* white navigation bullets */
-.swiper-pagination-bullet-active {
-  background-color: #ffa04b !important;
 }
 
 /* ========================================================================== */
