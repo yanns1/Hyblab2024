@@ -34,6 +34,7 @@
     <script src="js/slide11.js" defer></script>
     <script src="js/slide12.js" defer></script>
     <script src="js/index.js" defer></script>
+
   </head>
   <body>
     <!-- Le conteneur sert à vérouiller les proportions (aspect ratio) du contenu de la page (ici des slides) -->
@@ -46,34 +47,17 @@
 
       <div id="mySwiper" class="swiper main-swiper">
         <!-- le main est aussi le conteneur des différents slides (contenus à chaque fois dans des sections-->
-        <main class="swiper-wrapper">
+        <main class="swiper-wrapper" id="lottie">
           <section id="slide1" class="swiper-slide">
-            <h1 id="slide-1">
-              Salut ! Moi c'est
-              <img
-                src="data/img/logo-Victoire.svg"
-                id="logo-victoire"
-                alt="logo-victoire"
-              />
-            </h1>
-            <p>
-              C’est moi qui vais t’accompagner tout au long de cette expérience.
-              A travers cette plateforme interactive, tu vas découvrir une
-              partie de l’exposition du magazine Les Autres Possibles, consacrée
-              aux femmes dans le sport. Amuse-toi bien!
-            </p>
-            <img
-              src="data/img/Victoire.svg"
-              id="personnage-victoire"
-              alt="logo-victoire"
-            />
+            <script type="text/javascript" src="./accueil.json"></script>
           </section>
 
           <section id="slide2" class="swiper-slide">
             <div class="swiper scroll-swiper">
+              <h1 class="title">Introduction</h1>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <h1 id="introduction">Introduction</h1>
+                  <h1>La Course Continue</h1>
                   <p>
                     Les femmes dans le sport, c’est d’abord l’histoire d’un
                     combat permanent. Si aujourd’hui, on peut s’émerveiller
@@ -94,6 +78,7 @@
                     progresse vite ! Découvre les dates marquantes de ces 24
                     dernières années…
                   </p>
+                  <br>
                 </div>
               </div>
             </div>
@@ -120,9 +105,9 @@
                     l’accès des femmes aux postes à responsabilité.
                   </p>
                   <img
-                          src="data/img/RugbyBall.svg"
-                          id="rugbyball"
-                          alt="rugbyball"
+                    src="data/img/RugbyBall.svg"
+                    id="rugbyball"
+                    alt="rugbyball"
                   />
                 </div>
               </div>
@@ -132,42 +117,30 @@
           <section id="slide4" class="swiper-slide">
             <div class="swiper scroll-swiper">
               <h1 class="title">2010</h1>
-              <h2>Création des Jeux Olympiques
-                de la Jeunesse.
-              </h2>
+              <h2>Création des Jeux Olympiques de la Jeunesse.</h2>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <p>
-                    Les Jeux olympiques de la jeunesse
-                    (JOJ), ça ne te dis peut-être pas grand
-                    chose? C’est normal! Et pourtant cette
-                    compétition s’est voulu paritaire avant
-                    les JO classique. En 2020, par
-                    exemple, il y avait 940 sportifs et 940
-                    sportives. 
+                    Les Jeux olympiques de la jeunesse (JOJ), ça ne te dis
+                    peut-être pas grand chose? C’est normal! Et pourtant cette
+                    compétition s’est voulu paritaire avant les JO classique. En
+                    2020, par exemple, il y avait 940 sportifs et 940 sportives.
                   </p>
                   <br />
                   <p class="subtitle">
-                    Les JOJ sont destinés aux
-                    jeunes athlètes d’élite, âgés
-                    de 15 à 18 ans, et sont
-                    quasi-semblables aux Jeux
-                    olympiques pour adultes.
+                    Les JOJ sont destinés aux jeunes athlètes d’élite, âgés de
+                    15 à 18 ans, et sont quasi-semblables aux Jeux olympiques
+                    pour adultes.
                   </p>
                   <br />
                   <p>
-                    Son but est de rassembler des jeunes
-                    du monde entier autour de leurs
-                    passions tout en intégrant une
-                    dimension éducative sur la protection
-                    des athlètes ou le travail sur la
-                    performance par exemple. L’édition
-                    2024 a lieu dans la province de
-                    Gangwon en Corée du Sud. Cette
-                    année aussi, les JOJ sont paritaires et
-                    deux nouvelles épreuves mixtes ont
+                    Son but est de rassembler des jeunes du monde entier autour
+                    de leurs passions tout en intégrant une dimension éducative
+                    sur la protection des athlètes ou le travail sur la
+                    performance par exemple. L’édition 2024 a lieu dans la
+                    province de Gangwon en Corée du Sud. Cette année aussi, les
+                    JOJ sont paritaires et deux nouvelles épreuves mixtes ont
                     été ajoutées.
-
                   </p>
                   <img
                     src="data/img/yellowArc.svg"
@@ -181,23 +154,31 @@
 
           <section id="slide5" class="swiper-slide">
             <div class="swiper scroll-swiper">
-              <h1 class= "title">2012</h1>
+              <h1 class="title">2012</h1>
               <h2>Première femme de l’UFC</h2>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-
                   <p>
-                    Savais-tu que la première catégorie féminine d’Arts Martiaux Mixtes (MMA) a été créée il y a 12 ans ? C’est la catégorie poids coqs féminins. La première championne de cette division s’appelle Ronda Rousey, une catcheuse américaine originaire de la Californie.
+                    Savais-tu que la première catégorie féminine d’Arts Martiaux
+                    Mixtes (MMA) a été créée il y a 12 ans ? C’est la catégorie
+                    poids coqs féminins. La première championne de cette
+                    division s’appelle Ronda Rousey, une catcheuse américaine
+                    originaire de la Californie.
                   </p>
                   <br />
                   <p>
-                    En 2013, elle a affronté Liz Carmouche pour la première ceinture féminine de l’UFC, l’organisation américaine de MMA. On parle ici de la première confrontation féminine de MMA du pays ! Du côté de la France, il a fallu attendre encore un peu, car c’est en 2021 que Manon Fiorot devient la première française à remporter ce championnat.
+                    En 2013, elle a affronté Liz Carmouche pour la première
+                    ceinture féminine de l’UFC, l’organisation américaine de
+                    MMA. On parle ici de la première confrontation féminine de
+                    MMA du pays ! Du côté de la France, il a fallu attendre
+                    encore un peu, car c’est en 2021 que Manon Fiorot devient la
+                    première française à remporter ce championnat.
                   </p>
                   <img
-                  src="data/img/boxing-gloves.svg"
-                  id="boxing-gloves"
-                  alt="boxing-gloves"
-                />
+                    src="data/img/boxing-gloves.svg"
+                    id="boxing-gloves"
+                    alt="boxing-gloves"
+                  />
                 </div>
               </div>
             </div>
@@ -205,26 +186,35 @@
 
           <section id="slide6" class="swiper-slide">
             <div class="swiper scroll-swiper">
-              <h1 class = "title"> 2019 - 2020</h1>
+              <h1 class="title">2019 - 2020</h1>
               <h2>Libération de la parole</h2>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <p>
-                    Oups, je triche un peu en te donnant deux dates… C’est parce que depuis quelques années, la parole se libère sur les agressions que les femmes subissent dans le monde du sport.
+                    Oups, je triche un peu en te donnant deux dates… C’est parce
+                    que depuis quelques années, la parole se libère sur les
+                    agressions que les femmes subissent dans le monde du sport.
                   </p>
                   <br />
                   <p>
-                    D’abord, c’est grâce à une enquête du média Disclose en 2019, qui révèle que de nombreuses affaires de violences sexistes et sexuelles (VSS) ont été étouffées, et les agresseurs protégés.
+                    D’abord, c’est grâce à une enquête du média Disclose en
+                    2019, qui révèle que de nombreuses affaires de violences
+                    sexistes et sexuelles (VSS) ont été étouffées, et les
+                    agresseurs protégés.
                   </p>
                   <br />
                   <p>
-                    Tu te rends compte, les femmes doivent se battre pour intégrer le milieu du sport, et en plus elles n’y sont même pas en sécurité ! Heureusement, le mouvement #MeToo a généré une vague de témoignages de sportives qui a permis de briser le tabou.
+                    Tu te rends compte, les femmes doivent se battre pour
+                    intégrer le milieu du sport, et en plus elles n’y sont même
+                    pas en sécurité ! Heureusement, le mouvement #MeToo a généré
+                    une vague de témoignages de sportives qui a permis de briser
+                    le tabou.
                   </p>
                   <br />
                   <img
-                          src="data/img/IceSkate.svg"
-                          id="iceskate"
-                          alt="iceskate"
+                    src="data/img/IceSkate.svg"
+                    id="iceskate"
+                    alt="iceskate"
                   />
                 </div>
               </div>
@@ -253,16 +243,26 @@
             <div class="overlay"></div>
             <div class="swiper scroll-swiper">
               <h1 id="date2022">2022</h1>
-              <h2> (retour du) Tour de France féminin </h2>
+              <h2>(retour du) Tour de France féminin</h2>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <p id="text2022">
-                    Bonne nouvelle, les femmes reviennent dans la course ! Alors qu’il avait disparu en 2010 par manque de financement, le Tour de France féminin a fait son grand retour il y a deux ans. Et oui, dès qu’il faut parler argent, on a la fâcheuse tendance de sacrifier le sport féminin avant le sport masculin.
+                    Bonne nouvelle, les femmes reviennent dans la course ! Alors
+                    qu’il avait disparu en 2010 par manque de financement, le
+                    Tour de France féminin a fait son grand retour il y a deux
+                    ans. Et oui, dès qu’il faut parler argent, on a la fâcheuse
+                    tendance de sacrifier le sport féminin avant le sport
+                    masculin.
                   </p>
                   <p>
-                    En tout cas, c’est une étape importante pour le cyclisme féminin, au sens propre comme figuré, car les coureuses vont gagner de la visibilité et des sponsors. Par contre, il y a encore du chemin à faire sur l’égalité des récompenses : la vainqueure gagne 50 000€, c’est cinq fois moins que le maillot jaune masculin… 
+                    En tout cas, c’est une étape importante pour le cyclisme
+                    féminin, au sens propre comme figuré, car les coureuses vont
+                    gagner de la visibilité et des sponsors. Par contre, il y a
+                    encore du chemin à faire sur l’égalité des récompenses : la
+                    vainqueure gagne 50 000€, c’est cinq fois moins que le
+                    maillot jaune masculin…
                   </p>
-                  <img src="img/bike.svg">
+                  <img src="img/bike.svg" />
                 </div>
               </div>
             </div>
@@ -276,20 +276,30 @@
             </div>
             <div class="swiper scroll-swiper">
               <h1 id="date2022">2022*</h1>
-              <h2> Une femme arbitre en Coupe du Monde masculine </h2>
+              <h2>Une femme arbitre en Coupe du Monde masculine</h2>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <p id="text2022">
-                    Une femme arbitre une compétition internationale masculine. Cela ne te paraît peut-être pas dérangeant et pourtant ce n’est qu’en 2022 lors de la Coupe du Monde au Qatar, qu’une femme (et française en plus) est désignée comme arbitre centrale. C’est lors du match Allemagne - Costa Rica que Stéphanie Frappart a pu écrire l’histoire.
+                    Une femme arbitre une compétition internationale masculine.
+                    Cela ne te paraît peut-être pas dérangeant et pourtant ce
+                    n’est qu’en 2022 lors de la Coupe du Monde au Qatar, qu’une
+                    femme (et française en plus) est désignée comme arbitre
+                    centrale. C’est lors du match Allemagne - Costa Rica que
+                    Stéphanie Frappart a pu écrire l’histoire.
                   </p>
                   <img src="img/slide8.svg">
                   <p id="paragraph2022">
-                    Son nom ne t’est sûrement pas familier. Elle a pourtant une carrière impressionnante ! 
+                    Son nom ne t’est sûrement pas familier. Elle a pourtant une
+                    carrière impressionnante !
                   </p>
                   <p>
-                    Elle a été, par exemple, la première femme à arbitrer en Ligue 1 masculine ou en Ligue des champions. Mais la présence de femme reste très exceptionnelle… Aujourd’hui, elles ne représentent que 4% de l’effectif des arbitres en France. C’est vraiment très peu !
+                    Elle a été, par exemple, la première femme à arbitrer en
+                    Ligue 1 masculine ou en Ligue des champions. Mais la
+                    présence de femme reste très exceptionnelle… Aujourd’hui,
+                    elles ne représentent que 4% de l’effectif des arbitres en
+                    France. C’est vraiment très peu !
                   </p>
-                  <img src="img/sifflet.svg">
+                  <img src="img/sifflet.svg" />
                 </div>
               </div>
             </div>
@@ -301,12 +311,16 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <p>
-                    Et voilà! Tu as fait le tour des grandes évolutions de ces dernières années! J’espère que tu as pu apprendre pleins de nouvelles choses et découvrir toutes ces femmes inspirantes.
+                    Et voilà! Tu as fait le tour des grandes évolutions de ces
+                    dernières années! J’espère que tu as pu apprendre pleins de
+                    nouvelles choses et découvrir toutes ces femmes inspirantes.
                   </p>
-                  <p id="text2022">Si tu as envie de découvrir davantage de sportives, Les Autres Possibles a réalisé plusieurs autres portraits que tu peux retrouver juste ici : LIEN ?
+                  <p id="text2022">
+                    Si tu as envie de découvrir davantage de sportives, Les
+                    Autres Possibles a réalisé plusieurs autres portraits que tu
+                    peux retrouver juste ici : LIEN ?
                   </p>
-                  <p id="bilan-paragraph">A bientôt!
-                  </p>
+                  <p id="bilan-paragraph">A bientôt!</p>
                 </div>
               </div>
             </div>
@@ -314,7 +328,10 @@
 
           <section id="slide10" class="swiper-slide"></section>
 
+
           <section id="slide11" class="swiper-slide">
+
+            <!-- Tiroir à dupliquer pour les pages concernées -->
             <div class="overlay"></div>
             <div class="drawer">
               Lorem ipsum dolor sit amet, officia excepteur ex fugiat
@@ -329,154 +346,9 @@
               reprehenderit commodo ex non excepteur duis sunt velit enim.
               Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
               culpa et culpa duis.
-                <button class="drawer-button"></button>
+              <button class="drawer-button"></button>
             </div>
           </section>
-
-          <section id="slide12" class="swiper-slide">
-            <div class="swiper scroll-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <h4>Scroll Container</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    luctus, ex eu sagittis faucibus, ligula ipsum sagittis
-                    magna, et imperdiet dolor lectus eu libero. Vestibulum
-                    venenatis eget turpis sed faucibus. Maecenas in ullamcorper
-                    orci, eu ullamcorper sem. Etiam elit ante, luctus non ante
-                    sit amet, sodales vulputate odio. Aenean tristique nisl
-                    tellus, sit amet fringilla nisl volutpat cursus. Quisque
-                    dignissim lectus ac nunc consectetur mattis. Proin vel
-                    hendrerit ipsum, et lobortis dolor. Vestibulum convallis,
-                    nibh et tincidunt tristique, nisl risus facilisis lectus, ut
-                    interdum orci nisl ac nunc. Cras et aliquam felis. Quisque
-                    vel ipsum at elit sodales posuere eget non est. Fusce
-                    convallis vestibulum dolor non volutpat. Vivamus vestibulum
-                    quam ut ultricies pretium.
-                  </p>
-                  <p>
-                    Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac
-                    urna consectetur convallis non vel mi. Donec libero dolor,
-                    volutpat ut urna sit amet, aliquet molestie purus. Phasellus
-                    faucibus, leo vel scelerisque lobortis, ipsum leo
-                    sollicitudin metus, eget sagittis ante orci eu ipsum. Nulla
-                    ac mauris eu risus sagittis scelerisque iaculis bibendum
-                    mauris. Cras ut egestas orci. Cras odio risus, sagittis ut
-                    nunc vitae, aliquam consectetur purus. Vivamus ornare nunc
-                    vel tellus facilisis, quis dictum elit tincidunt. Donec
-                    accumsan nisi at laoreet sodales. Cras at ullamcorper massa.
-                    Maecenas at facilisis ex. Nam mollis dignissim purus id
-                    efficitur.
-                  </p>
-                  <p>
-                    Curabitur eget aliquam erat. Curabitur a neque vitae purus
-                    volutpat elementum. Vivamus quis vestibulum leo, efficitur
-                    ullamcorper velit. Integer tincidunt finibus metus vel
-                    porta. Mauris sed mauris congue, pretium est nec, malesuada
-                    purus. Nulla hendrerit consectetur arcu et lacinia.
-                    Suspendisse augue justo, convallis eget arcu in, pretium
-                    tempor ligula. Nullam vulputate tincidunt est ut
-                    ullamcorper.
-                  </p>
-                  <p>
-                    Curabitur sed sodales leo. Nulla facilisi. Etiam
-                    condimentum, nisi id tempor vulputate, nisi justo cursus
-                    justo, pellentesque condimentum diam arcu sit amet leo. Cum
-                    sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. In placerat tellus a posuere
-                    vehicula. Donec diam massa, efficitur vitae mattis et,
-                    pretium in augue. Fusce iaculis mi quis ante venenatis, sit
-                    amet pellentesque orci aliquam. Vestibulum elementum posuere
-                    vehicula.
-                  </p>
-                  <p>
-                    Sed tincidunt diam a massa pharetra faucibus. Praesent
-                    condimentum id arcu nec fringilla. Maecenas faucibus, ante
-                    et venenatis interdum, erat mi eleifend dui, at convallis
-                    nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna
-                    ut, tempus metus. Cras in nibh sed ipsum consequat rhoncus.
-                    Proin fringilla nulla ut augue tempor fermentum. Nunc
-                    hendrerit non nisi vitae finibus. Donec eget ornare libero.
-                    Aliquam auctor erat enim, a semper risus semper at. In ut
-                    dui in metus tincidunt euismod eget et lacus. Aenean et
-                    dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio.
-                    Etiam a libero ut nisi feugiat tincidunt vel vitae turpis.
-                    Maecenas vel orci sit amet lorem hendrerit venenatis
-                    sollicitudin ut dui. Quisque rhoncus nibh in massa pretium
-                    scelerisque.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    luctus, ex eu sagittis faucibus, ligula ipsum sagittis
-                    magna, et imperdiet dolor lectus eu libero. Vestibulum
-                    venenatis eget turpis sed faucibus. Maecenas in ullamcorper
-                    orci, eu ullamcorper sem. Etiam elit ante, luctus non ante
-                    sit amet, sodales vulputate odio. Aenean tristique nisl
-                    tellus, sit amet fringilla nisl volutpat cursus. Quisque
-                    dignissim lectus ac nunc consectetur mattis. Proin vel
-                    hendrerit ipsum, et lobortis dolor. Vestibulum convallis,
-                    nibh et tincidunt tristique, nisl risus facilisis lectus, ut
-                    interdum orci nisl ac nunc. Cras et aliquam felis. Quisque
-                    vel ipsum at elit sodales posuere eget non est. Fusce
-                    convallis vestibulum dolor non volutpat. Vivamus vestibulum
-                    quam ut ultricies pretium.
-                  </p>
-                  <p>
-                    Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac
-                    urna consectetur convallis non vel mi. Donec libero dolor,
-                    volutpat ut urna sit amet, aliquet molestie purus. Phasellus
-                    faucibus, leo vel scelerisque lobortis, ipsum leo
-                    sollicitudin metus, eget sagittis ante orci eu ipsum. Nulla
-                    ac mauris eu risus sagittis scelerisque iaculis bibendum
-                    mauris. Cras ut egestas orci. Cras odio risus, sagittis ut
-                    nunc vitae, aliquam consectetur purus. Vivamus ornare nunc
-                    vel tellus facilisis, quis dictum elit tincidunt. Donec
-                    accumsan nisi at laoreet sodales. Cras at ullamcorper massa.
-                    Maecenas at facilisis ex. Nam mollis dignissim purus id
-                    efficitur.
-                  </p>
-                  <p>
-                    Curabitur eget aliquam erat. Curabitur a neque vitae purus
-                    volutpat elementum. Vivamus quis vestibulum leo, efficitur
-                    ullamcorper velit. Integer tincidunt finibus metus vel
-                    porta. Mauris sed mauris congue, pretium est nec, malesuada
-                    purus. Nulla hendrerit consectetur arcu et lacinia.
-                    Suspendisse augue justo, convallis eget arcu in, pretium
-                    tempor ligula. Nullam vulputate tincidunt est ut
-                    ullamcorper.
-                  </p>
-                  <p>
-                    Curabitur sed sodales leo. Nulla facilisi. Etiam
-                    condimentum, nisi id tempor vulputate, nisi justo cursus
-                    justo, pellentesque condimentum diam arcu sit amet leo. Cum
-                    sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. In placerat tellus a posuere
-                    vehicula. Donec diam massa, efficitur vitae mattis et,
-                    pretium in augue. Fusce iaculis mi quis ante venenatis, sit
-                    amet pellentesque orci aliquam. Vestibulum elementum posuere
-                    vehicula.
-                  </p>
-                  <p>
-                    Sed tincidunt diam a massa pharetra faucibus. Praesent
-                    condimentum id arcu nec fringilla. Maecenas faucibus, ante
-                    et venenatis interdum, erat mi eleifend dui, at convallis
-                    nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna
-                    ut, tempus metus. Cras in nibh sed ipsum consequat rhoncus.
-                    Proin fringilla nulla ut augue tempor fermentum. Nunc
-                    hendrerit non nisi vitae finibus. Donec eget ornare libero.
-                    Aliquam auctor erat enim, a semper risus semper at. In ut
-                    dui in metus tincidunt euismod eget et lacus. Aenean et
-                    dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio.
-                    Etiam a libero ut nisi feugiat tincidunt vel vitae turpis.
-                    Maecenas vel orci sit amet lorem hendrerit venenatis
-                    sollicitudin ut dui. Quisque rhoncus nibh in massa pretium
-                    scelerisque.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
         </main>
 
         <div class="swiper-pagination"></div>

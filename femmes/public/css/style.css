@@ -19,7 +19,7 @@ body {
   font-family: sans-serif;
 }
 
-section {
+#container {
   background-color: #f7f7f7;
 }
 
@@ -39,7 +39,7 @@ p {
   font-family: Helvetica;
   font-size: 15px;
   line-height: 19px;
-  text-align: justify;
+  text-align: center;
 }
 
 #personnage-victoire {
@@ -47,9 +47,6 @@ p {
   height: 422px;
 }
 
-#introduction {
-  color: #5bc5f2;
-}
 
 #sous-titre {
   font-size: 22px;
@@ -66,40 +63,38 @@ p {
   text-align: center;
 }
 
-#slide3 .title{
-  color: #ED6EA7;
+
+#slide2 .title{
+  color: #5bc5f2;
 }
 
-#slide4 .title{
-  color: #FADC00;
+#slide3 .title {
+  color: #ed6ea7;
 }
 
-#slide5 .title{
-  color: #E6331B;
-
+#slide4 .title {
+  color: #fadc00;
 }
 
-#slide6 .title{
+#slide5 .title {
+  color: #e6331b;
+}
+
+#slide6 .title {
   color: #554596;
 }
 
+.swiper-slide {
+  overflow: hidden;
+}
 
 .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
-  /* Il faut toutes les propriétés ci-dessous pour que l'évènement toEdge */
-  /* de Swiper fonctionne (oui, y compris le padding différent de 0!). */
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  height: auto;
+.scroll-swiper .swiper-slide {
+  padding: 10px;
 }
 
 /* -------------- Drawer --------------*/
@@ -146,24 +141,24 @@ p {
 /* -------------- Slide 07 et 08 : Date 2022 ----------*/
 
 #date2022 {
-  color: #49B170;
+  color: #49b170;
   text-align: center;
 }
-#paragraph2022{
-  color: #49B170;
+#paragraph2022 {
+  color: #49b170;
   font-size: 22px;
-  line-height: 28px;;
+  line-height: 28px;
   text-align: center;
 }
-#text2022{
+#text2022 {
   padding-top: 20px;
 }
-#bilan{
-  color: #FFA04B;
+#bilan {
+  color: #ffa04b;
   text-align: center;
 }
-#bilan-paragraph{
-  color: #FFA04B;
+#bilan-paragraph {
+  color: #ffa04b;
   text-align: center;
   font-size: 22px;
   line-height: 28px;
@@ -229,22 +224,21 @@ p {
 }
 /* -------------- End of Loader --------------*/
 
-/* Swiper slider. Need to fill the container */
 #mySwiper {
-  width: 100%;
   height: 100%;
+  width: 100%;
   position: absolute;
 }
 
 .swiper-pagination {
   --swiper-pagination-right: auto;
-  --swiper-pagination-left: 8px;
-  --swiper-pagination-bullet-vertical-gap : 10px;
+  --swiper-pagination-left: 10px;
+  --swiper-pagination-bullet-vertical-gap: 10px;
 }
 
 /* white navigation bullets */
 .swiper-pagination-bullet-active {
-  background-color: #FFA04B !important;
+  background-color: #ffa04b !important;
 }
 
 /* the slides and the loader should fill the whole 9:16 zone */
