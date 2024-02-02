@@ -114,6 +114,15 @@ p {
   color: #49B170;
   text-align: center;
 }
+#paragraph2022{
+  color: #49B170;
+  font-size: 22px;
+  line-height: 28px;;
+  text-align: center;
+}
+#text2022{
+  padding-top: 20px;
+}
 /* -------------- Overlay --------------*/
 
 .overlay {
