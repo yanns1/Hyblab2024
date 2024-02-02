@@ -92,8 +92,8 @@ window.onload = function () {
   // and send it to the back (z-index = -1)
   anime({
     targets: "#loader",
-    opacity: "0",
-    "z-index": -1,
+    opacity: 0,
+    zIndex: -1,
     easing: "easeOutQuad",
   });
 };
