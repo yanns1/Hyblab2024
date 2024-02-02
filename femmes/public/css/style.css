@@ -138,6 +138,22 @@ p {
   background-color: #E5E5E5;
 }
 
+/* -------------- Slides 05 --------------*/
+
+#slide5 > p {
+  color: #e6331b;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#slide5 .tevi {
+    position: relative;
+    align-content: center;
+}
+
+
 /* -------------- Slide 07 et 08 : Date 2022 ----------*/
 
 #date2022 {
