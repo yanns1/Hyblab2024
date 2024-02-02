@@ -34,6 +34,7 @@
     <script src="js/slide11.js" defer></script>
     <script src="js/slide12.js" defer></script>
     <script src="js/index.js" defer></script>
+
   </head>
   <body>
     <!-- Le conteneur sert à vérouiller les proportions (aspect ratio) du contenu de la page (ici des slides) -->
@@ -46,9 +47,14 @@
 
       <div id="mySwiper" class="swiper main-swiper">
         <!-- le main est aussi le conteneur des différents slides (contenus à chaque fois dans des sections-->
-        <main class="swiper-wrapper">
+        <main class="swiper-wrapper" id="lottie">
           <section id="slide1" class="swiper-slide">
+            <script type="text/javascript" src="./accueil.json"></script>
+          </section>
+
+          <section id="slide2" class="swiper-slide">
             <div class="swiper scroll-swiper">
+              <h1 class="title">Introduction</h1>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <h1>La Course Continue</h1>
@@ -72,27 +78,10 @@
                     progresse vite ! Découvre les dates marquantes de ces 24
                     dernières années…
                   </p>
+                  <img src="data/animation/victoire1.gif" class="victoire-gif" alt="Animation Victoire" />  
                 </div>
               </div>
             </div>
-          </section>
-
-          <section id="slide2" class="swiper-slide">
-            <h1>
-              Salut! Moi c'est
-              <img
-                src="data/img/logo-Victoire.svg"
-                id="logo-victoire"
-                alt="logo-victoire"
-              />
-            </h1>
-            <p>
-              C’est moi qui vais t’accompagner tout au long de cette expérience.
-              A travers cette plateforme interactive, tu vas découvrir une
-              partie de l’exposition du magazine Les Autres Possibles, consacrée
-              aux femmes dans le sport. Amuse-toi bien!
-            </p>
-            <img src="data/animation/victoire1.gif" class="victoire-gif" alt="Animation Victoire" />  
           </section>
 
           <section id="slide3" class="swiper-slide">
@@ -193,6 +182,22 @@
                 </div>
               </div>
             </div>
+            <div class="overlay"></div>
+            <div class="drawer">
+              <p>
+              Exemple d’une femme évoluant dans un sport de combat.
+              </p>
+              </br>
+              <img
+                src="data/img/marilys-audran.png"
+                id="tevi"
+                alt="tevi"
+              />
+              <p>
+              “J'ai créé la section MMA Girls à Paris, puis à Nantes. Ce sport, c’est une excuse pour donner envie aux femmes d’utiliser leurs corps autrement. Au MMA, mon corps n’est pas un fardeau, quelque chose que je dois protéger, mon corps devient un outil, voire une arme.”
+              </p>  
+                <button class="drawer-button"></button>
+            </div>
           </section>
 
           <section id="slide6" class="swiper-slide">
@@ -234,11 +239,14 @@
 
           <section id="slide7" class="swiper-slide">
             <div class="swiper scroll-swiper">
-              <h1 id="date2022">2022</h1>
-              <h2>(retour du) Tour de France féminin</h2>
+              <header>
+                <h1 id="date2022">2022</h1>
+                <h2>(retour du) Tour de France féminin</h2>
+              </header>
+
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <p id="text2022">
+                  <p>
                     Bonne nouvelle, les femmes reviennent dans la course ! Alors
                     qu’il avait disparu en 2010 par manque de financement, le
                     Tour de France féminin a fait son grand retour il y a deux
@@ -256,11 +264,37 @@
                   </p>
                   <img src="img/bike.svg" />
                 </div>
+
+                <div class="drawer">
+                  <p>
+                    Exemple d’une femme évoluant dans le cyclisme.
+                  </p>
+                  <h1 id="portrait2022">Portrait </h1>
+                  <h3> Chloé Michel </h3>
+                  
+                  <p id="text-slide7-8">
+                    26 ans etManageuse de Team Elles (Pays de la Loire)
+                  </p>
+                  <p id="text-portrait"> 
+                    “L’objectif du Team Elles est d’amener nos cyclistes au plus haut niveau, pourquoi pas jusqu’au Tour de France féminin. J’accompagne les filles dans un triple projet : sportif, social et scolaire. Certaines de nos cyclistes sont déjà passées dans des équipes professionnelles.”
+                  </p>
+                  <p id="text-slide7-8">
+                    Ancienne pratiquante de rollers, Chloé a rejoint le milieu des deux roues il y a deux ans. Elle a intégré la Team Elles, une association pour le cyclisme féminin, où elle forme 10 jeunes filles à devenir des cyclistes de haut niveau. 
+                  </p>
+                    <button class="drawer-button"></button>
+                </div>
+                <div class="overlay"></div>
+
               </div>
             </div>
           </section>
 
           <section id="slide8" class="swiper-slide">
+            <div class="overlay"></div>
+            <div class="drawer">
+              
+                <button class="drawer-button"></button>
+            </div>
             <div class="swiper scroll-swiper">
               <h1 id="date2022">2022*</h1>
               <h2>Une femme arbitre en Coupe du Monde masculine</h2>
@@ -274,6 +308,7 @@
                     centrale. C’est lors du match Allemagne - Costa Rica que
                     Stéphanie Frappart a pu écrire l’histoire.
                   </p>
+                  <img src="img/slide8.svg">
                   <p id="paragraph2022">
                     Son nom ne t’est sûrement pas familier. Elle a pourtant une
                     carrière impressionnante !
@@ -314,7 +349,10 @@
 
           <section id="slide10" class="swiper-slide"></section>
 
+
           <section id="slide11" class="swiper-slide">
+
+            <!-- Tiroir à dupliquer pour les pages concernées -->
             <div class="overlay"></div>
             <div class="drawer">
               Lorem ipsum dolor sit amet, officia excepteur ex fugiat
@@ -330,150 +368,6 @@
               Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
               culpa et culpa duis.
               <button class="drawer-button"></button>
-            </div>
-          </section>
-
-          <section id="slide12" class="swiper-slide">
-            <div class="swiper scroll-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <h4>Scroll Container</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    luctus, ex eu sagittis faucibus, ligula ipsum sagittis
-                    magna, et imperdiet dolor lectus eu libero. Vestibulum
-                    venenatis eget turpis sed faucibus. Maecenas in ullamcorper
-                    orci, eu ullamcorper sem. Etiam elit ante, luctus non ante
-                    sit amet, sodales vulputate odio. Aenean tristique nisl
-                    tellus, sit amet fringilla nisl volutpat cursus. Quisque
-                    dignissim lectus ac nunc consectetur mattis. Proin vel
-                    hendrerit ipsum, et lobortis dolor. Vestibulum convallis,
-                    nibh et tincidunt tristique, nisl risus facilisis lectus, ut
-                    interdum orci nisl ac nunc. Cras et aliquam felis. Quisque
-                    vel ipsum at elit sodales posuere eget non est. Fusce
-                    convallis vestibulum dolor non volutpat. Vivamus vestibulum
-                    quam ut ultricies pretium.
-                  </p>
-                  <p>
-                    Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac
-                    urna consectetur convallis non vel mi. Donec libero dolor,
-                    volutpat ut urna sit amet, aliquet molestie purus. Phasellus
-                    faucibus, leo vel scelerisque lobortis, ipsum leo
-                    sollicitudin metus, eget sagittis ante orci eu ipsum. Nulla
-                    ac mauris eu risus sagittis scelerisque iaculis bibendum
-                    mauris. Cras ut egestas orci. Cras odio risus, sagittis ut
-                    nunc vitae, aliquam consectetur purus. Vivamus ornare nunc
-                    vel tellus facilisis, quis dictum elit tincidunt. Donec
-                    accumsan nisi at laoreet sodales. Cras at ullamcorper massa.
-                    Maecenas at facilisis ex. Nam mollis dignissim purus id
-                    efficitur.
-                  </p>
-                  <p>
-                    Curabitur eget aliquam erat. Curabitur a neque vitae purus
-                    volutpat elementum. Vivamus quis vestibulum leo, efficitur
-                    ullamcorper velit. Integer tincidunt finibus metus vel
-                    porta. Mauris sed mauris congue, pretium est nec, malesuada
-                    purus. Nulla hendrerit consectetur arcu et lacinia.
-                    Suspendisse augue justo, convallis eget arcu in, pretium
-                    tempor ligula. Nullam vulputate tincidunt est ut
-                    ullamcorper.
-                  </p>
-                  <p>
-                    Curabitur sed sodales leo. Nulla facilisi. Etiam
-                    condimentum, nisi id tempor vulputate, nisi justo cursus
-                    justo, pellentesque condimentum diam arcu sit amet leo. Cum
-                    sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. In placerat tellus a posuere
-                    vehicula. Donec diam massa, efficitur vitae mattis et,
-                    pretium in augue. Fusce iaculis mi quis ante venenatis, sit
-                    amet pellentesque orci aliquam. Vestibulum elementum posuere
-                    vehicula.
-                  </p>
-                  <p>
-                    Sed tincidunt diam a massa pharetra faucibus. Praesent
-                    condimentum id arcu nec fringilla. Maecenas faucibus, ante
-                    et venenatis interdum, erat mi eleifend dui, at convallis
-                    nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna
-                    ut, tempus metus. Cras in nibh sed ipsum consequat rhoncus.
-                    Proin fringilla nulla ut augue tempor fermentum. Nunc
-                    hendrerit non nisi vitae finibus. Donec eget ornare libero.
-                    Aliquam auctor erat enim, a semper risus semper at. In ut
-                    dui in metus tincidunt euismod eget et lacus. Aenean et
-                    dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio.
-                    Etiam a libero ut nisi feugiat tincidunt vel vitae turpis.
-                    Maecenas vel orci sit amet lorem hendrerit venenatis
-                    sollicitudin ut dui. Quisque rhoncus nibh in massa pretium
-                    scelerisque.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    luctus, ex eu sagittis faucibus, ligula ipsum sagittis
-                    magna, et imperdiet dolor lectus eu libero. Vestibulum
-                    venenatis eget turpis sed faucibus. Maecenas in ullamcorper
-                    orci, eu ullamcorper sem. Etiam elit ante, luctus non ante
-                    sit amet, sodales vulputate odio. Aenean tristique nisl
-                    tellus, sit amet fringilla nisl volutpat cursus. Quisque
-                    dignissim lectus ac nunc consectetur mattis. Proin vel
-                    hendrerit ipsum, et lobortis dolor. Vestibulum convallis,
-                    nibh et tincidunt tristique, nisl risus facilisis lectus, ut
-                    interdum orci nisl ac nunc. Cras et aliquam felis. Quisque
-                    vel ipsum at elit sodales posuere eget non est. Fusce
-                    convallis vestibulum dolor non volutpat. Vivamus vestibulum
-                    quam ut ultricies pretium.
-                  </p>
-                  <p>
-                    Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac
-                    urna consectetur convallis non vel mi. Donec libero dolor,
-                    volutpat ut urna sit amet, aliquet molestie purus. Phasellus
-                    faucibus, leo vel scelerisque lobortis, ipsum leo
-                    sollicitudin metus, eget sagittis ante orci eu ipsum. Nulla
-                    ac mauris eu risus sagittis scelerisque iaculis bibendum
-                    mauris. Cras ut egestas orci. Cras odio risus, sagittis ut
-                    nunc vitae, aliquam consectetur purus. Vivamus ornare nunc
-                    vel tellus facilisis, quis dictum elit tincidunt. Donec
-                    accumsan nisi at laoreet sodales. Cras at ullamcorper massa.
-                    Maecenas at facilisis ex. Nam mollis dignissim purus id
-                    efficitur.
-                  </p>
-                  <p>
-                    Curabitur eget aliquam erat. Curabitur a neque vitae purus
-                    volutpat elementum. Vivamus quis vestibulum leo, efficitur
-                    ullamcorper velit. Integer tincidunt finibus metus vel
-                    porta. Mauris sed mauris congue, pretium est nec, malesuada
-                    purus. Nulla hendrerit consectetur arcu et lacinia.
-                    Suspendisse augue justo, convallis eget arcu in, pretium
-                    tempor ligula. Nullam vulputate tincidunt est ut
-                    ullamcorper.
-                  </p>
-                  <p>
-                    Curabitur sed sodales leo. Nulla facilisi. Etiam
-                    condimentum, nisi id tempor vulputate, nisi justo cursus
-                    justo, pellentesque condimentum diam arcu sit amet leo. Cum
-                    sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. In placerat tellus a posuere
-                    vehicula. Donec diam massa, efficitur vitae mattis et,
-                    pretium in augue. Fusce iaculis mi quis ante venenatis, sit
-                    amet pellentesque orci aliquam. Vestibulum elementum posuere
-                    vehicula.
-                  </p>
-                  <p>
-                    Sed tincidunt diam a massa pharetra faucibus. Praesent
-                    condimentum id arcu nec fringilla. Maecenas faucibus, ante
-                    et venenatis interdum, erat mi eleifend dui, at convallis
-                    nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna
-                    ut, tempus metus. Cras in nibh sed ipsum consequat rhoncus.
-                    Proin fringilla nulla ut augue tempor fermentum. Nunc
-                    hendrerit non nisi vitae finibus. Donec eget ornare libero.
-                    Aliquam auctor erat enim, a semper risus semper at. In ut
-                    dui in metus tincidunt euismod eget et lacus. Aenean et
-                    dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio.
-                    Etiam a libero ut nisi feugiat tincidunt vel vitae turpis.
-                    Maecenas vel orci sit amet lorem hendrerit venenatis
-                    sollicitudin ut dui. Quisque rhoncus nibh in massa pretium
-                    scelerisque.
-                  </p>
-                </div>
-              </div>
             </div>
           </section>
         </main>
