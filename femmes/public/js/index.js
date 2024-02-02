@@ -82,7 +82,6 @@ window.onload = function () {
   //   console.log("Scroll Snap Index changed.");
   // });
 
-  console.log(scrollSwipers);
   for (let i = 0; i < scrollSwipers.length; i++) {
     scrollSwipers[i].on("toEdge", () => {
       console.log("toEdge");
