@@ -62,17 +62,30 @@ p {
   text-align: center;
 }
 
-#slide2 .title {
+#slide2 .victoire-gif {
+  width: 100%;
+  height: auto;
+  position: relative; 
+  top: -200px;
+}
+
+#slide2 .title{
   color: #5bc5f2;
 }
 
 #slide3 .title {
   color: #ed6ea7;
 }
-
+/* ---------- Slide 4 ----------*/
 #slide4 .title {
   color: #fadc00;
 }
+
+#slide4 .subtitle {
+  color: #fadc00
+}
+
+/*-------- Fin Slide 4 ---------*/
 
 #slide5 .title {
   color: #e6331b;
