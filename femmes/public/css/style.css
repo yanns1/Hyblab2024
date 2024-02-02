@@ -2,6 +2,11 @@
 /* ------- that adapts content width and height so that aspect ratio  ----------- */
 /* ------- is kept between 9/16 a,d 3/4 (portait orientation)         ----------- */
 
+@font-face {
+  font-family: "Gopher";
+  src: url("../data/font/GopherText-Light.ttf");
+}
+
 /* Normalize margin and padding to ease elements positioning */
 * {
   padding: 0;
@@ -10,13 +15,51 @@
 
 body {
   background-color: black;
-  color: white;
   overflow: hidden; /* to avoid slider bugs on some browsers */
   font-family: sans-serif;
 }
 
-#slide4, #slide6 {
-  font-size: 25%;
+section {
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  margin: 0px;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+#personnage-victoire {
+  width: 550px;
+  height: 422px;
+}
+
+#introduction {
+  color: #5bc5f2;
+}
+
+#sous-titre {
+  font-size: 22px;
+  line-height: 28px;
+  color: #5bc5f2;
+  text-align: center;
+}
+
+#pink-title {
+  color: #ed6ea7;
 }
 
 .swiper {
@@ -24,8 +67,7 @@ body {
   height: 100%;
 }
 
-#slide4 .swiper-slide,
-#slide6 .swiper-slide {
+.swiper-slide {
   /* Il faut toutes les propriétés ci-dessous pour que l'évènement toEdge */
   /* de Swiper fonctionne (oui, y compris le padding différent de 0!). */
   padding: 20px;
@@ -120,115 +162,10 @@ body {
 }
 
 /* the slides and the loader should fill the whole 9:16 zone */
-.swiper-wrapper section,
 #loader {
   background-color: dodgerblue;
   width: 100%;
   height: 100%;
-}
-
-/* Most of the elements in this demo are absolute positioned with percentages */
-#first-slide header,
-#second-slide header {
-  text-align: center;
-  width: 100%;
-  top: 10%;
-  position: absolute;
-  font-size: 30%;
-  z-index: 2;
-}
-
-#logo-hyblab {
-  text-align: center;
-  width: 50%;
-  left: 50%; /* center the logo, in interaction with the negative margin-left */
-  top: 50%;
-  margin-left: -25%; /* this is half the width */
-  margin-top: calc(
-    -7.5% * 9 / 16
-  ); /* margins are relative to the element width... :-( */
-  position: absolute;
-  font-size: 50%;
-  z-index: 2;
-  cursor: pointer;
-}
-
-/* Last slide image is centered */
-#img-fini {
-  width: 70%;
-  left: 50%; /* center the logo, in interaction with the negative margin-left */
-  top: 40%;
-  position: absolute;
-  margin-left: -35%; /* this is half the width */
-  margin-top: calc(
-    -25% * 9 / 16
-  ); /* margins are relative to the element width... :-( */
-}
-
-main > section {
-  background-image: url("../img/background.svg");
-  background-size: 100% auto; /* background is full width and height is proportional to width */
-  background-position: bottom; /* background is bottom aligned */
-}
-
-/* Footer of last slide is at the bottom and content is centered */
-#first-slide footer {
-  bottom: 5%;
-  position: absolute;
-  box-sizing: border-box; /* So that padding is not added to width (and width: 100% works) */
-  width: 100%; /* could also use  width: calc(100% - 2em) if not using box-sizing */
-  font-size: 20%;
-  text-align: center;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* ---------- Positioning of logos on the last slide -------------------- */
-/* here we have a contraint on the height of the logos (not the width)     */
-/* so we cannot use % and use em (which are proportional to the size of the */
-/* slide because of body's font size rule at the end of this CSS           */
-#bandeau {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: white;
-  font-size: 20%;
-}
-
-#bandeau li {
-  list-style-type: none;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0.5em;
-}
-
-#bandeau img {
-  height: 2.5em;
-}
-
-#bandeau #hyblab {
-  margin: 1em auto;
-  height: 3em;
-  display: block;
-}
-
-#bandeau #cc,
-#bandeau #opensource {
-  height: 1em;
-}
-
-#bandeau .stacked {
-  display: block;
-}
-
-#bandeau ul {
-  text-align: center;
-  padding: 0 0;
-  margin: 0.5em auto;
-}
-
-#bandeau .institutionnel {
-  height: 2em;
 }
 
 /* ---------- Important media queries for easy responsive content :-) ----------------- */

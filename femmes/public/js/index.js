@@ -1,6 +1,6 @@
 "use strict";
 
-window.onload = async function () {
+window.onload = function () {
   const mainSwiper = new Swiper(".main-swiper", {
     direction: "vertical",
     keyboard: true,
@@ -40,6 +40,33 @@ window.onload = async function () {
       case 2:
         initSlide3();
         break;
+      case 3:
+        initSlide4();
+        break;
+      case 4:
+        initSlide5();
+        break;
+      case 5:
+        initSlide6();
+        break;
+      case 6:
+        initSlide7();
+        break;
+      case 7:
+        initSlide8();
+        break;
+      case 8:
+        initSlide9();
+        break;
+      case 9:
+        initSlide10();
+        break;
+      case 10:
+        initSlide11();
+        break;
+      case 11:
+        initSlide12();
+        break;
     }
   });
 
@@ -55,14 +82,16 @@ window.onload = async function () {
   //   console.log("Scroll Snap Index changed.");
   // });
 
+  console.log(scrollSwipers);
   for (let i = 0; i < scrollSwipers.length; i++) {
     scrollSwipers[i].on("toEdge", () => {
+      console.log("toEdge");
       mainSwiper.mousewheel.enable();
     });
   }
 
   // Init first slide
-  await initSlide1();
+  initSlide1();
 
   // fade out the loader "slide"
   // and send it to the back (z-index = -1)
