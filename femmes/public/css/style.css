@@ -82,6 +82,8 @@ p {
 #slide6 .title{
   color: #554596;
 }
+
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -128,7 +130,7 @@ p {
   margin: auto 0;
 }
 
-/* -------------- Slide 2022 : Tour de france----------*/
+/* -------------- Slide 07 et 08 : Date 2022 ----------*/
 
 #date2022 {
   color: #49B170;
@@ -141,6 +143,17 @@ p {
   text-align: center;
 }
 #text2022{
+  padding-top: 20px;
+}
+#bilan{
+  color: #FFA04B;
+  text-align: center;
+}
+#bilan-paragraph{
+  color: #FFA04B;
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
   padding-top: 20px;
 }
 /* -------------- Overlay --------------*/
