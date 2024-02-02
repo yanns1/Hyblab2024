@@ -67,6 +67,16 @@ p {
   height: 100%;
 }
 
+/*Slide4*/
+
+#slide4 .title {
+    color: #FADC00
+}
+
+#slide4 .subtitle {
+    color: #FADC00
+}
+
 .swiper-slide {
   /* Il faut toutes les propriétés ci-dessous pour que l'évènement toEdge */
   /* de Swiper fonctionne (oui, y compris le padding différent de 0!). */
