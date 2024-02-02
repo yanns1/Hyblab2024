@@ -6,8 +6,8 @@ const initSlide11 = function () {
   // Reset attributes
   drawer.setAttribute("style", "right: -90vw; background: #2f2f2f;");
 
-  const button = document.querySelector(".drawer-button");
-  const overlay = document.querySelector(".overlay");
+  const button = document.querySelector("#slide11 .drawer-button");
+  const overlay = document.querySelector("#slide11 .overlay");
   button.addEventListener("click", function (event) {
     let t1 = anime.timeline({
       easing: "easeInOutQuad",
@@ -17,7 +17,7 @@ const initSlide11 = function () {
     });
 
     t1.add({
-      targets: ".drawer",
+      targets: "#slide11 .drawer",
       right: "0vw",
       backgroundColor: "#ff0000",
     });
@@ -37,7 +37,7 @@ const initSlide11 = function () {
     });
 
     t1.add({
-      targets: ".drawer",
+      targets: "#slide11 .drawer",
       right: "-90vw",
       backgroundColor: "#2f2f2f",
       easing: "easeInOutQuad",

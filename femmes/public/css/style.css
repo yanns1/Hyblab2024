@@ -108,7 +108,7 @@ p {
   right: 100%;
   height: 60px;
   width: 20px;
-  background: wheat;
+  background: red;
   border: none;
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -118,6 +118,21 @@ p {
   margin: auto 0;
 }
 
+/* -------------- Slide 2022 : Tour de france----------*/
+
+#date2022 {
+  color: #49B170;
+  text-align: center;
+}
+#paragraph2022{
+  color: #49B170;
+  font-size: 22px;
+  line-height: 28px;;
+  text-align: center;
+}
+#text2022{
+  padding-top: 20px;
+}
 /* -------------- Overlay --------------*/
 
 .overlay {
