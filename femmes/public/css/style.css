@@ -4,7 +4,12 @@
 
 @font-face {
   font-family: "Gopher";
-  src: url("../data/font/GopherText-Light.ttf");
+  src: url("../data/font/GopherText-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gopher Bold";
+  src: url("../data/font/GopherText-Bold.ttf")
 }
 
 /* Normalize margin and padding to ease elements positioning */
@@ -25,14 +30,25 @@ body {
 
 h1 {
   font-size: 28px;
+  font-family: "Gopher Bold";
   line-height: 35px;
 }
 
 h2 {
   font-size: 22px;
+  font-family: "Gopher";
   line-height: 27px;
   text-align: center;
   margin: 0px;
+}
+
+h3{
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 13px;
+  line-height: 15px;
+  font-style: italic;
+  font-weight: 300;
 }
 
 p {
@@ -47,12 +63,23 @@ p {
   height: 422px;
 }
 
-
 #sous-titre {
   font-size: 22px;
   line-height: 28px;
   color: #5bc5f2;
   text-align: center;
+}
+
+#logo-disposition{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 103px;
+}
+
+#paragraphe-slide1{
+  color: #5BC5F2;
+  font-size: 22px;
 }
 
 #pink-title {
@@ -63,6 +90,12 @@ p {
   text-align: center;
 }
 
+#slide2 .victoire-gif {
+  width: 100%;
+  height: auto;
+  position: relative; 
+  top: -200px;
+}
 
 #slide2 .title{
   color: #5bc5f2;
@@ -71,10 +104,16 @@ p {
 #slide3 .title {
   color: #ed6ea7;
 }
-
+/* ---------- Slide 4 ----------*/
 #slide4 .title {
   color: #fadc00;
 }
+
+#slide4 .subtitle {
+  color: #fadc00
+}
+
+/*-------- Fin Slide 4 ---------*/
 
 #slide5 .title {
   color: #e6331b;
@@ -94,14 +133,36 @@ p {
 }
 
 .scroll-swiper .swiper-slide {
-  padding: 10px;
+  padding: 0px 20px 30px;
+  box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+  height: auto;
 }
+
+.swaper-slide header {
+  padding: 30px 20px;
+}
+
+#slide7 p {
+  padding: 0px 20px;
+}
+
+/* #slide7 .drawer-button::before { */
+/*   content: ''; */
+/*   position: absolute; */
+/*   top: 0; */
+/*   left: 0; */
+/*   width: 1px; */
+/*   height: 30px; */
+/*   background-color: red; */
+/* } */
 
 /* -------------- Drawer --------------*/
 
 .drawer {
   position: absolute;
   top: 0;
+  bottom: 0;
   height: 100vh;
   width: 90vw;
   right: -90vw;
@@ -113,29 +174,16 @@ p {
 .drawer-button {
   position: absolute;
   right: 100%;
-  height: 80%;
+  height: 80vh;
   width: 20px;
-  background: white;
+  bottom: 20px;
   border: none;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  /* center vertically */
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.drawer-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2px;
-  height: 50%;
-  background-color: #E5E5E5;
+  margin: 0;
+  background-color: red;
+  /* border-bottom-left-radius: 10px; */
+  /* border-top-left-radius: 10px; */
 }
 
 /* -------------- Slides 05 --------------*/
@@ -180,24 +228,24 @@ p {
   line-height: 28px;
   padding-top: 20px;
 }
-#text-portrait{
+#text-portrait {
   text-align: center;
   font-style: italic;
   font-weight: bold;
 }
-#portrait2022{
-  color: #49B170;
+#portrait2022 {
+  color: #49b170;
   float: left;
   padding-top: 20px;
 }
-#text-slide7-8{
+#text-slide7-8 {
   padding-top: 60px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: justify;
 }
-#chloe{
+#chloe {
   padding-top: 20px;
   max-width: 100%;
   position: relative;
