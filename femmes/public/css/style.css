@@ -108,6 +108,11 @@ p {
   margin: auto 0;
 }
 
+/* -------------- Slide 2022 : Tour de france----------*/
+
+#date2022 {
+  color: #49B170;
+}
 /* -------------- Overlay --------------*/
 
 .overlay {
