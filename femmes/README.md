@@ -32,3 +32,12 @@ Le dossier de votre projet contient un squelette de code que vous devez modifier
 ## Instructions de déploiement
 
 Si votre projet nécessite des instructions spécifiques pour son déploiement, merci d'ajouter des explications ici.
+
+## Instructions de modification
+
+Les fichiers qui sont utilisés sont 
+- index.html
+- testDuGars.css
+- testDuGars.js
+
+Tous les autres fichiers sont ceux du prof. Si vous voulez revoir ce que le prof a fait, il faut renommer le fichier `indexDuProf.html` en `index.html` (sans oublier de renommer l'actuel `index.html`). 
