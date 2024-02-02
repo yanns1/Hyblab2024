@@ -39,7 +39,7 @@ p {
   font-family: Helvetica;
   font-size: 15px;
   line-height: 19px;
-  text-align: justify;
+  text-align: center;
 }
 
 #personnage-victoire {
@@ -47,9 +47,6 @@ p {
   height: 422px;
 }
 
-#introduction {
-  color: #5bc5f2;
-}
 
 #sous-titre {
   font-size: 22px;
@@ -66,6 +63,9 @@ p {
   text-align: center;
 }
 
+#slide2 .title{
+  color: #5bc5f2;
+}
 #slide3 .title{
   color: #ED6EA7;
 }
