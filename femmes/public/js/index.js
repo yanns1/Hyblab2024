@@ -126,10 +126,6 @@ window.onload = function () {
     }
   });
 
-  // scrollSwiper.on("snapIndexChange", () => {
-  //   console.log("Scroll Snap Index changed.");
-  // });
-
   for (let i = 0; i < scrollSwipers.length; i++) {
     scrollSwipers[i].on("toEdge", () => {
       mainSwiper.mousewheel.enable();
