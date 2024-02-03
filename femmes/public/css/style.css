@@ -99,17 +99,10 @@ p {
 }
 
 .scroll-swiper .swiper-slide {
-  position: relative;
   padding: 0px 0px 20px 0px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: auto;
-}
-
-#mySwiper {
-  height: 100%;
-  width: 100%;
-  position: absolute;
 }
 
 .swiper-pagination {
@@ -216,6 +209,7 @@ p {
 #slide7 header h1 {
   color: var(--green);
 }
+
 
 /* ========================================================================== */
 /* SLIDE 8 */
