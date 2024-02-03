@@ -102,6 +102,7 @@ p {
   -webkit-box-sizing: border-box;
   height: auto;
   padding: 0px 0px 20px 0px;
+  overflow: hidden;
 }
 
 .swiper-pagination {
@@ -119,6 +120,10 @@ p {
 /* ========================================================================== */
 /* SLIDE 1 */
 /* ========================================================================== */
+#slide1 h1 {
+  color: var(--blue);
+}
+
 #personnage-victoire {
   width: 550px;
   height: 422px;
