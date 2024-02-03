@@ -45,8 +45,6 @@
 
 body {
   background-color: var(--black);
-  /* to avoid slider bugs on some browsers */
-  /* overflow: hidden; */
   font-family: sans-serif;
 }
 
@@ -75,7 +73,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-family: Helvetica;
+  font-family: "Helvetica Light";
   font-size: 13px;
   line-height: 15px;
   font-style: italic;
@@ -99,10 +97,10 @@ p {
 }
 
 .scroll-swiper .swiper-slide {
-  padding: 0px 0px 20px 0px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: auto;
+  padding: 0px 0px 20px 0px;
 }
 
 .swiper-pagination {
@@ -209,7 +207,6 @@ p {
 #slide7 header h1 {
   color: var(--green);
 }
-
 
 /* ========================================================================== */
 /* SLIDE 8 */
