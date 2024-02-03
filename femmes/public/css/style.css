@@ -262,7 +262,7 @@ p {
   margin: 0;
 }
 
-.overlay {
+#overlay {
   position: absolute;
   overflow: hidden;
   opacity: 0;
@@ -271,8 +271,7 @@ p {
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 25%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* ========================================================================== */
