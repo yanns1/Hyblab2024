@@ -97,6 +97,7 @@ p {
 }
 
 .scroll-swiper .swiper-slide {
+  position: relative;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: auto;
@@ -240,34 +241,34 @@ p {
 /* ========================================================================== */
 .drawer {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 90vw;
-  right: -90vw;
+  bottom: 30px;
+  height: calc(100vh - 60px);
+  width: calc(100vw - 50px);
+  left: 100vw;
   background-color: var(--white);
-  font-size: 25%;
   z-index: 20;
 }
 
 .drawer-button {
   position: absolute;
   right: 100%;
-  height: 80vh;
   width: 20px;
-  bottom: 20px;
+  top: 0;
+  bottom: 0;
   border: none;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin: 0;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: -4px 0 1px rgba(0, 0, 0, 0.05);
+  background-color: var(--white);
+  cursor: pointer;
 }
 
-#overlay {
+/* Bon article pour comprendre comment z-index marche: */
+/* https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ */
+.overlay {
   position: absolute;
-  overflow: hidden;
   opacity: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: -1;

@@ -1,15 +1,23 @@
 "use strict";
 
-function mkDrawer(drawerSelector) {
+function px2vw(px) {
+  return (px / window.innerWidth) * 100;
+}
+
+function mkDrawer(slideSelector) {
+  const drawerSelector = `${slideSelector} .drawer`;
+  const overlaySelector = `${slideSelector} .overlay`;
   const drawer = document.querySelector(drawerSelector);
   const button = document.querySelector(`${drawerSelector} .drawer-button`);
-  const overlaySelector = "#overlay";
   const overlay = document.querySelector(overlaySelector);
 
   // Reset attributes
-  drawer.setAttribute("style", "right: -90vw;");
+  drawer.setAttribute("style", "left: 100vw;");
+  overlay.setAttribute("style", "opacity: 0;");
 
   button.addEventListener("click", function (event) {
+    button.setAttribute("style", "cursor: auto;");
+
     let t1 = anime.timeline({
       easing: "easeInOutQuad",
     });
@@ -19,7 +27,7 @@ function mkDrawer(drawerSelector) {
 
     t1.add({
       targets: drawerSelector,
-      right: "0vw",
+      left: `${px2vw(30 + 20)}vw`,
     });
     t2.add({
       targets: overlaySelector,
@@ -38,7 +46,7 @@ function mkDrawer(drawerSelector) {
 
     t1.add({
       targets: drawerSelector,
-      right: "-90vw",
+      left: "100vw",
       easing: "easeInOutQuad",
     });
     t2.add({
@@ -46,5 +54,7 @@ function mkDrawer(drawerSelector) {
       opacity: 0,
       zIndex: -1,
     });
+
+    button.setAttribute("style", "cursor: pointer;");
   });
 }

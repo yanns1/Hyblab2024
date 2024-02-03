@@ -1,5 +1,5 @@
 "use strict";
 
 const initSlide7 = function () {
-  mkDrawer("#slide7 .drawer");
+  mkDrawer("#slide7");
 };

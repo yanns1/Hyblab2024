@@ -109,12 +109,6 @@ window.onload = function () {
       case 8:
         initSlide9();
         break;
-      case 9:
-        initSlide10();
-        break;
-      case 10:
-        initSlide11();
-        break;
     }
   });
 
