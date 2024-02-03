@@ -102,6 +102,7 @@ p {
   -webkit-box-sizing: border-box;
   height: auto;
   padding: 0px 0px 20px 0px;
+  overflow: hidden;
 }
 
 .swiper-pagination {
