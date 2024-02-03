@@ -208,7 +208,16 @@ p {
 #slide7 header h1 {
   color: var(--green);
 }
+#slide7 .drawer h1 {
+  color: var(--green);
+  padding-top: 40px;
+  padding-left: 20px;
+}
 
+#slide7 .drawer h3 {
+  padding-top: 40px;
+  padding-left: 20px;
+}
 /* ========================================================================== */
 /* SLIDE 8 */
 /* ========================================================================== */
