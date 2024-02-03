@@ -2,13 +2,21 @@
 /* FONT FACES */
 /* ========================================================================== */
 @font-face {
-  font-family: "Gopher";
-  src: url("../data/font/GopherText-Regular.ttf");
+  font-family: "Gopher Regular";
+  src: url("../fonts/Gopher/Gopher-Regular.otf");
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "Gopher Bold";
-  src: url("../data/font/GopherText-Bold.ttf");
+  src: url("../fonts/Gopher/Gopher-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  src: url("../fonts/Helvetica/HelveticaNeue-Light.otf");
+  font-weight: 300;
 }
 
 /* ========================================================================== */
@@ -23,6 +31,7 @@
   --red: #dc1e19;
   --yellow: #ebc015;
   --black: #000000;
+  --white: #ffffff;
   --pink: #ec6ea6;
   --blue: #5bc5f2;
   --green: #49b070;
@@ -36,7 +45,8 @@
 
 body {
   background-color: var(--black);
-  overflow: hidden; /* to avoid slider bugs on some browsers */
+  /* to avoid slider bugs on some browsers */
+  /* overflow: hidden; */
   font-family: sans-serif;
 }
 
@@ -44,18 +54,23 @@ body {
   background-color: var(--background-color);
 }
 
+header {
+  padding: 30px 20px 22px 20px;
+}
+
 h1 {
   font-size: 28px;
   font-family: "Gopher Bold";
   line-height: 35px;
+  text-align: center;
 }
 
 h2 {
   font-size: 22px;
-  font-family: "Gopher";
-  line-height: 27px;
+  font-family: "Gopher Regular";
+  line-height: 22px;
   text-align: center;
-  margin: 0px;
+  color: var(--black);
 }
 
 h3 {
@@ -68,33 +83,27 @@ h3 {
 }
 
 p {
-  font-family: Helvetica;
+  font-family: "Helvetica Light";
   font-size: 15px;
   line-height: 19px;
   text-align: center;
+  padding: 0px 50px;
 }
 
 /* ========================================================================== */
 /* SWIPER */
 /* ========================================================================== */
-.swiper-slide {
-  overflow: hidden;
-}
-
 .swiper {
   width: 100%;
   height: 100%;
 }
 
 .scroll-swiper .swiper-slide {
-  padding: 0px 20px 30px;
+  position: relative;
+  padding: 0px 0px 20px 0px;
   box-sizing: border-box;
-  --webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   height: auto;
-}
-
-.swiper-slide header {
-  padding: 30px 20px;
 }
 
 #mySwiper {
@@ -212,62 +221,11 @@ p {
 /* ========================================================================== */
 /* SLIDE 7 */
 /* ========================================================================== */
-#slide7 p {
-  padding: 0px 20px;
-}
-
-/* #slide7 .drawer-button::before { */
-/*   content: ''; */
-/*   position: absolute; */
-/*   top: 0; */
-/*   left: 0; */
-/*   width: 1px; */
-/*   height: 30px; */
-/*   background-color: red; */
-/* } */
-
-#date2022 {
+#slide7 header h1 {
   color: var(--green);
-  text-align: center;
 }
 
-#paragraph2022 {
-  color: var(--green);
-  font-size: 22px;
-  line-height: 28px;
-  text-align: center;
-}
 
-#text2022 {
-  padding-top: 20px;
-}
-
-#text-portrait {
-  text-align: center;
-  font-style: italic;
-  font-weight: bold;
-}
-
-#portrait2022 {
-  color: var(--green);
-  float: left;
-  padding-top: 20px;
-}
-
-#text-slide7-8 {
-  padding-top: 60px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: justify;
-}
-
-#chloe {
-  padding-top: 20px;
-  max-width: 100%;
-  position: relative;
-  float: right;
-}
 
 /* ========================================================================== */
 /* SLIDE 8 */
@@ -305,7 +263,7 @@ p {
   height: 100vh;
   width: 90vw;
   right: -90vw;
-  background: #2f2f2f;
+  background-color: var(--white);
   font-size: 25%;
   z-index: 20;
 }
@@ -320,7 +278,6 @@ p {
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 0;
-  background-color: red;
 }
 
 .overlay {
