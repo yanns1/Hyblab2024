@@ -169,6 +169,11 @@ p {
   color: var(--pink);
 }
 
+#slide3 .drawer h1 {
+  color: var(--pink);
+  padding-left: 20px;
+}
+
 /* ========================================================================== */
 /* SLIDE 4 */
 /* ========================================================================== */
@@ -178,6 +183,11 @@ p {
 
 #slide4 p:nth-child(2) {
   color: var(--yellow);
+}
+
+#slide4 .drawer h1 {
+  color: var(--yellow);
+  padding-left: 20px;
 }
 
 /* ========================================================================== */
@@ -200,6 +210,11 @@ p {
   align-content: center;
 }
 
+#slide5 .drawer h1 {
+  color: var(--red);
+  padding-left: 20px;
+}
+
 /* ========================================================================== */
 /* SLIDE 6 */
 /* ========================================================================== */
@@ -207,27 +222,32 @@ p {
   color: var(--purple);
 }
 
+#slide6 .drawer h1 {
+  color: var(--purple);
+  padding-left: 20px;
+}
+
 /* ========================================================================== */
 /* SLIDE 7 */
 /* ========================================================================== */
+
 #slide7 header h1 {
   color: var(--green);
 }
 #slide7 .drawer h1 {
   color: var(--green);
-  padding-top: 40px;
   padding-left: 20px;
 }
 
-#slide7 .drawer h3 {
-  padding-top: 40px;
-  padding-left: 20px;
-}
 /* ========================================================================== */
 /* SLIDE 8 */
 /* ========================================================================== */
 #slide8 header h1 {
   color: var(--green);
+}
+#slide8 .drawer h1 {
+  color: var(--green);
+  padding-left: 20px;
 }
 
 /* ========================================================================== */
@@ -276,6 +296,44 @@ p {
   cursor: pointer;
 }
 
+.drawer .exemple{
+  padding-top: 8px;
+}
+.drawer .div-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+  align-items: start;
+  padding-top: 20px;
+}
+.drawer .div1{
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer h2 {
+  padding-left: 20px;
+  font-size:medium;
+}
+
+.drawer p{
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.drawer .text1{
+  padding-top: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.drawer .text2{
+  padding-top: 25px;
+}
+.drawer .portrait-photo{
+  border-radius: 10px;
+}
 /* Bon article pour comprendre comment z-index marche: */
 /* https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ */
 .overlay {
