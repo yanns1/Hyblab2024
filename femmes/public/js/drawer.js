@@ -4,6 +4,7 @@ function openDrawer(slideSelector) {
   const drawerSelector = `${slideSelector} .drawer`;
   const overlaySelector = `${slideSelector} .overlay`;
   const chevronSelector = `${slideSelector} .chevron`;
+  const overlay = document.querySelector(overlaySelector);
   const chevron = document.querySelector(chevronSelector);
 
   let t1 = anime.timeline({
@@ -16,6 +17,7 @@ function openDrawer(slideSelector) {
     easing: "easeInOutQuad",
   });
 
+  overlay.setAttribute("style", "z-index: 10;");
   t1.add({
     targets: drawerSelector,
     left: "0%",
@@ -23,7 +25,6 @@ function openDrawer(slideSelector) {
   t2.add({
     targets: overlaySelector,
     opacity: 1,
-    zIndex: 10,
   });
   t3.add({
     targets: chevron,
