@@ -53,7 +53,7 @@ body {
 }
 
 header {
-  padding: 30px 20px 22px 20px;
+  padding: 15px 20px 5px 20px;
 }
 
 h1 {
@@ -140,6 +140,7 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   width: 103px;
 }
 
@@ -159,7 +160,11 @@ p {
 }
 
 #slide2 header h1 {
-  color: var(--blue);
+  color: var(--black);
+}
+
+#slide2 header h1 span{
+  color: var(--orange);
 }
 
 /* ========================================================================== */
@@ -178,6 +183,12 @@ p {
   width: 4px;
   height: 85px;
   background-color: var(--pink);
+}
+
+#rugbyball{
+  width: 300px;
+  height: 350px;
+
 }
 
 
@@ -295,6 +306,8 @@ p {
 /* ========================================================================== */
 #slide9 header h1 {
   color: var(--orange);
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 #bilan-paragraph {
