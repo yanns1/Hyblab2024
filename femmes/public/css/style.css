@@ -328,8 +328,8 @@ p {
 /* ========================================================================== */
 .drawer {
   position: absolute;
-  bottom: 30px;
-  height: calc(100vh - 60px);
+  bottom: 100px;  /* Pour gérer le fait que le tiroir ne se voit plus sur la page suivante */
+  height: calc(100vh - 80px);
   width: calc(100vw - 50px);
   left: 100vw;
   background-color: var(--white);
