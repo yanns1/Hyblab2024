@@ -96,6 +96,15 @@ p {
   height: 100%;
 }
 
+section.swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-swiper {
+  flex-grow: 1;
+}
+
 .scroll-swiper .swiper-slide {
   position: relative;
   box-sizing: border-box;
@@ -163,7 +172,7 @@ p {
   color: var(--black);
 }
 
-#slide2 header h1 span{
+#slide2 header h1 span {
   color: var(--orange);
 }
 
@@ -185,12 +194,10 @@ p {
   background-color: var(--pink);
 }
 
-#rugbyball{
+#rugbyball {
   width: 300px;
   height: 350px;
-
 }
-
 
 /* ========================================================================== */
 /* SLIDE 4 */
@@ -213,7 +220,6 @@ p {
   height: 85px;
   background-color: var(--yellow);
 }
-
 
 /* ========================================================================== */
 /* SLIDE 5 */
@@ -246,7 +252,6 @@ p {
   background-color: var(--red);
 }
 
-
 /* ========================================================================== */
 /* SLIDE 6 */
 /* ========================================================================== */
@@ -264,7 +269,6 @@ p {
   height: 85px;
   background-color: var(--purple);
 }
-
 
 /* ========================================================================== */
 /* SLIDE 7 */
@@ -341,7 +345,7 @@ p {
 .drawer-button {
   position: absolute;
   right: 100%;
-  width: 20px;
+  width: 30px;
   top: 0;
   bottom: 0;
   border: none;
@@ -356,11 +360,10 @@ p {
   gap: 8px;
 }
 
-
-.drawer .exemple{
+.drawer .exemple {
   padding-top: 8px;
 }
-.drawer .div-header{
+.drawer .div-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -368,31 +371,31 @@ p {
   align-items: start;
   padding-top: 25px;
 }
-.drawer .div1{
+.drawer .div1 {
   display: flex;
   flex-direction: column;
 }
 
 .drawer h2 {
   padding-left: 20px;
-  font-size:medium;
+  font-size: medium;
 }
 
-.drawer p{
+.drawer p {
   font-size: 15px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.drawer .text1{
+.drawer .text1 {
   padding-top: 20px;
   font-style: italic;
   font-weight: bold;
 }
 
-.drawer .text2{
+.drawer .text2 {
   padding-top: 30px;
 }
-.drawer .portrait-photo{
+.drawer .portrait-photo {
   border-radius: 10px;
 }
 /* Bon article pour comprendre comment z-index marche: */
