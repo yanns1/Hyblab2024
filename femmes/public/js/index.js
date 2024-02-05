@@ -10,6 +10,7 @@ const slideColor = [
   "var(--green)",
   "var(--green)",
   "var(--orange)",
+  "var(--black)",
 ];
 
 function setPaginationBulletActiveColor(activeSlide) {
@@ -108,6 +109,9 @@ window.onload = function () {
         break;
       case 8:
         initSlide9();
+        break;
+      case 9:
+        initSlide10();
         break;
     }
   });
