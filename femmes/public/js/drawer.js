@@ -90,5 +90,6 @@ function mkDrawer(slideSelector) {
 
   overlay.addEventListener("click", function () {
     closeDrawer(slideSelector);
+    drawerIsOpen = false;
   });
 }
