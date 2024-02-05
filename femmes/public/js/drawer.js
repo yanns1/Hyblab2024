@@ -1,9 +1,5 @@
 "use strict";
 
-function px2vw(px) {
-  return (px / window.innerWidth) * 100;
-}
-
 function openDrawer(slideSelector) {
   const drawerSelector = `${slideSelector} .drawer`;
   const overlaySelector = `${slideSelector} .overlay`;
@@ -22,7 +18,7 @@ function openDrawer(slideSelector) {
 
   t1.add({
     targets: drawerSelector,
-    left: `${px2vw(30 + 20)}vw`,
+    left: "0%",
   });
   t2.add({
     targets: overlaySelector,
@@ -53,8 +49,7 @@ function closeDrawer(slideSelector) {
 
   t1.add({
     targets: drawerSelector,
-    left: "100vw",
-    easing: "easeInOutQuad",
+    left: "100%",
   });
   t2.add({
     targets: overlaySelector,
@@ -75,7 +70,7 @@ function mkDrawer(slideSelector) {
   const overlay = document.querySelector(overlaySelector);
 
   // Reset attributes
-  drawer.setAttribute("style", "left: 100vw;");
+  drawer.setAttribute("style", "left: 100%;");
   overlay.setAttribute("style", "opacity: 0;");
 
   let drawerIsOpen = false;

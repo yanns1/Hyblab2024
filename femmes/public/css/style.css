@@ -35,6 +35,15 @@
   --pink: #ec6ea6;
   --blue: #5bc5f2;
   --green: #49b070;
+
+  /* Viewport height and width (minus the black borders) */
+  --vh: 100vh;
+  --vw: calc(100 * 3vh / 4);
+
+  /* Else */
+  --drawer-height: calc(var(--vh) - 80px);
+  --drawer-width: calc(100% - 60px);
+  --drawer-button-width: 30px;
 }
 
 /* Normalize margin and padding to ease elements positioning */
@@ -332,12 +341,19 @@ section.swiper-slide {
 /* ========================================================================== */
 /* DRAWER */
 /* ========================================================================== */
-.drawer {
+.drawer-container {
   position: absolute;
   bottom: 30px;
-  height: calc(100vh - 80px);
-  width: calc(100vw - 50px);
-  left: 100vw;
+  left: 60px;
+  height: var(--drawer-height);
+  width: var(--drawer-width);
+}
+
+.drawer {
+  position: absolute;
+  left: 100%;
+  height: 100%;
+  width: 100%;
   background-color: var(--white);
   z-index: 20;
 }
@@ -345,7 +361,7 @@ section.swiper-slide {
 .drawer-button {
   position: absolute;
   right: 100%;
-  width: 30px;
+  width: var(--drawer-button-width);
   top: 0;
   bottom: 0;
   border: none;
@@ -474,11 +490,11 @@ section.swiper-slide {
 /* When the aspect ratio is smaller that 3/4, display a 3/4 content */
 #container {
   position: fixed; /* To set the size of the container to 100% of the visible viewport height AND for absolute positioning of child elements*/
-  height: 100%; /* even on mobile devices with url or navigation bars */
+  height: var(--vh); /* even on mobile devices with url or navigation bars */
   margin-left: calc(
-    (100vw - 100 * 3vh / 4) / 2
+    (100vw - var(--vw)) / 2
   ); /* Add black bands on left and right */
-  width: calc(100 * 3vh / 4); /* Force 3/4 aspect ratio */
+  width: var(--vw); /* Force 3/4 aspect ratio */
 }
 
 /* We set a default font size here. It will be the base for all other font sizes */
@@ -489,9 +505,16 @@ body {
 
 /* Fill the whole viewport when its aspect ratio is between 9/16 and 3/4 */
 @media screen and (max-aspect-ratio: 3/4) {
+  :root {
+    --vh: 100vh;
+    --vw: 100vw;
+  }
+
   #container {
     margin-left: 0; /* reset margin-left */
-    width: 100vw; /* content is full width (and full height because of the default rule for container height */
+    width: var(
+      --vw
+    ); /* content is full width (and full height because of the default rule for container height */
   }
 
   /* We set a default font size here. It will be the base for all other font sizes */
@@ -503,16 +526,19 @@ body {
 
 /* The content is displayed at 9/16 If the aspect ratio is higher that 9/16  */
 @media screen and (max-aspect-ratio: 9/16) {
+  :root {
+    --vh: calc(100 * 16vw / 9);
+    --vw: 100vw;
+  }
+
   #container {
     margin-left: 0; /* reset left margin */
-    width: 100vw; /* content is full width */
+    width: var(--vw); /* content is full width */
     margin-top: calc(
-      -50 * 16vw / 9
+      -1 * var(--vh) / 2
     ); /* move the content half the height to the top */
     top: 50%; /* then center it ! */
-    height: calc(
-      100 * 16vw / 9
-    ); /* adjust height so that aspect ratio is 9/16 */
+    height: var(--vh); /* adjust height so that aspect ratio is 9/16 */
   }
 
   /* We set a default font size here. It will be the base for all other font sizes */
