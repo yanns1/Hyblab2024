@@ -325,6 +325,74 @@ p {
   color: var(--black);
 }
 
+#slide10 {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row,
+.sixth-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-row {
+  align-items: center;
+  text-align: center;
+}
+
+#slide10 img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/*
+#slide10 {
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+
+#expo,
+#LAP,
+#Polytech{
+  order: 1;
+  flex: 0 0 15%; 
+
+}
+
+#EPJT{
+  order: 2;
+  flex: 0 0 51%; 
+}
+
+#AGR ,
+#sciencepo{
+  order: 3;
+  flex: 0 0 50%; 
+}
+
+#HYBLAB{
+  order: 4;
+  flex: 0 0 100%; 
+}
+
+#cc {
+  order: 5;
+  flex: 0 0 100%; 
+}
+
+*/
+
+
 /* ========================================================================== */
 /* DRAWER */
 /* ========================================================================== */
