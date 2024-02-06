@@ -35,6 +35,15 @@
   --pink: #ec6ea6;
   --blue: #5bc5f2;
   --green: #49b070;
+
+  /* Viewport height and width (minus the black borders) */
+  --vh: 100vh;
+  --vw: calc(100 * 3vh / 4);
+
+  /* Else */
+  --drawer-height: calc(var(--vh) - 80px);
+  --drawer-width: calc(100% - 60px);
+  --drawer-button-width: 30px;
 }
 
 /* Normalize margin and padding to ease elements positioning */
@@ -94,6 +103,15 @@ p {
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+section.swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-swiper {
+  flex-grow: 1;
 }
 
 .scroll-swiper .swiper-slide {
@@ -163,7 +181,7 @@ p {
   color: var(--black);
 }
 
-#slide2 header h1 span{
+#slide2 header h1 span {
   color: var(--orange);
 }
 
@@ -185,12 +203,10 @@ p {
   background-color: var(--pink);
 }
 
-#rugbyball{
+#rugbyball {
   width: 300px;
   height: 350px;
-
 }
-
 
 /* ========================================================================== */
 /* SLIDE 4 */
@@ -213,7 +229,6 @@ p {
   height: 85px;
   background-color: var(--yellow);
 }
-
 
 /* ========================================================================== */
 /* SLIDE 5 */
@@ -246,7 +261,6 @@ p {
   background-color: var(--red);
 }
 
-
 /* ========================================================================== */
 /* SLIDE 6 */
 /* ========================================================================== */
@@ -264,7 +278,6 @@ p {
   height: 85px;
   background-color: var(--purple);
 }
-
 
 /* ========================================================================== */
 /* SLIDE 7 */
@@ -396,12 +409,19 @@ p {
 /* ========================================================================== */
 /* DRAWER */
 /* ========================================================================== */
-.drawer {
+.drawer-container {
   position: absolute;
   bottom: 30px;
-  height: calc(100vh - 80px);
-  width: calc(100vw - 50px);
-  left: 100vw;
+  left: 60px;
+  height: var(--drawer-height);
+  width: var(--drawer-width);
+}
+
+.drawer {
+  position: absolute;
+  left: 100%;
+  height: 100%;
+  width: 100%;
   background-color: var(--white);
   z-index: 20;
 }
@@ -409,7 +429,7 @@ p {
 .drawer-button {
   position: absolute;
   right: 100%;
-  width: 20px;
+  width: var(--drawer-button-width);
   top: 0;
   bottom: 0;
   border: none;
@@ -424,11 +444,10 @@ p {
   gap: 8px;
 }
 
-
-.drawer .exemple{
+.drawer .exemple {
   padding-top: 8px;
 }
-.drawer .div-header{
+.drawer .div-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -436,31 +455,31 @@ p {
   align-items: start;
   padding-top: 25px;
 }
-.drawer .div1{
+.drawer .div1 {
   display: flex;
   flex-direction: column;
 }
 
 .drawer h2 {
   padding-left: 20px;
-  font-size:medium;
+  font-size: medium;
 }
 
-.drawer p{
+.drawer p {
   font-size: 15px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.drawer .text1{
+.drawer .text1 {
   padding-top: 20px;
   font-style: italic;
   font-weight: bold;
 }
 
-.drawer .text2{
+.drawer .text2 {
   padding-top: 30px;
 }
-.drawer .portrait-photo{
+.drawer .portrait-photo {
   border-radius: 10px;
 }
 /* Bon article pour comprendre comment z-index marche: */
@@ -539,11 +558,11 @@ p {
 /* When the aspect ratio is smaller that 3/4, display a 3/4 content */
 #container {
   position: fixed; /* To set the size of the container to 100% of the visible viewport height AND for absolute positioning of child elements*/
-  height: 100%; /* even on mobile devices with url or navigation bars */
+  height: var(--vh); /* even on mobile devices with url or navigation bars */
   margin-left: calc(
-    (100vw - 100 * 3vh / 4) / 2
+    (100vw - var(--vw)) / 2
   ); /* Add black bands on left and right */
-  width: calc(100 * 3vh / 4); /* Force 3/4 aspect ratio */
+  width: var(--vw); /* Force 3/4 aspect ratio */
 }
 
 /* We set a default font size here. It will be the base for all other font sizes */
@@ -554,9 +573,16 @@ body {
 
 /* Fill the whole viewport when its aspect ratio is between 9/16 and 3/4 */
 @media screen and (max-aspect-ratio: 3/4) {
+  :root {
+    --vh: 100vh;
+    --vw: 100vw;
+  }
+
   #container {
     margin-left: 0; /* reset margin-left */
-    width: 100vw; /* content is full width (and full height because of the default rule for container height */
+    width: var(
+      --vw
+    ); /* content is full width (and full height because of the default rule for container height */
   }
 
   /* We set a default font size here. It will be the base for all other font sizes */
@@ -568,16 +594,19 @@ body {
 
 /* The content is displayed at 9/16 If the aspect ratio is higher that 9/16  */
 @media screen and (max-aspect-ratio: 9/16) {
+  :root {
+    --vh: calc(100 * 16vw / 9);
+    --vw: 100vw;
+  }
+
   #container {
     margin-left: 0; /* reset left margin */
-    width: 100vw; /* content is full width */
+    width: var(--vw); /* content is full width */
     margin-top: calc(
-      -50 * 16vw / 9
+      -1 * var(--vh) / 2
     ); /* move the content half the height to the top */
     top: 50%; /* then center it ! */
-    height: calc(
-      100 * 16vw / 9
-    ); /* adjust height so that aspect ratio is 9/16 */
+    height: var(--vh); /* adjust height so that aspect ratio is 9/16 */
   }
 
   /* We set a default font size here. It will be the base for all other font sizes */
