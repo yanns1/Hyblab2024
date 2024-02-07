@@ -66,16 +66,19 @@ function closeDrawer(slideSelector) {
 function mkDrawer(slideSelector) {
   const drawerSelector = `${slideSelector} .drawer`;
   const overlaySelector = `${slideSelector} .overlay`;
+  const chevronSelector = `${slideSelector} .chevron`;
   const drawer = document.querySelector(drawerSelector);
   const button = document.querySelector(`${drawerSelector} .drawer-button`);
   const overlay = document.querySelector(overlaySelector);
+  const chevron = document.querySelector(chevronSelector);
 
   // Reset attributes
   drawer.setAttribute("style", "left: 100%;");
   overlay.setAttribute("style", "opacity: 0;");
+  overlay.setAttribute("style", "z-index: -1;");
+  chevron.setAttribute("style", "transform: rotate(0);");
 
   let drawerIsOpen = false;
-
   button.addEventListener("click", function () {
     switch (drawerIsOpen) {
       case true:

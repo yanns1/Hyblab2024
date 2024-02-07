@@ -338,6 +338,115 @@ section.swiper-slide {
   color: var(--black);
 }
 
+
+
+
+#slide10 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch; /* Ajout de cette ligne pour étirer les éléments à la même hauteur */
+}
+
+.left-column {
+  float: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 180px;
+  margin-left: 30px;
+}
+
+.row-principal:after{
+  display: table;
+  clear: both;
+}
+
+.right-column {
+  float: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 180px;
+  padding-right: 10px;
+}
+
+.left-column div,
+.right-column div {
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+img#LAP {
+  margin-left: 30px;
+}
+
+img#HYBLAB {
+  margin-left: 85px;
+}
+
+img#cc {
+  margin-left: 160px;
+}
+
+#slide10 img {
+  max-width: 100%;
+  height: auto;
+}
+
+#slide10 p{
+  text-align: center;
+  font-size: 15px;
+  font-family: Helvetica;
+  padding: 0px 20px;
+}
+
+
+/*
+#slide10 {
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+
+#expo,
+#LAP,
+#Polytech{
+  order: 1;
+  flex: 0 0 15%; 
+
+}
+
+#EPJT{
+  order: 2;
+  flex: 0 0 51%; 
+}
+
+#AGR ,
+#sciencepo{
+  order: 3;
+  flex: 0 0 50%; 
+}
+
+#HYBLAB{
+  order: 4;
+  flex: 0 0 100%; 
+}
+
+#cc {
+  order: 5;
+  flex: 0 0 100%; 
+}
+
+*/
+
+
 /* ========================================================================== */
 /* DRAWER */
 /* ========================================================================== */
