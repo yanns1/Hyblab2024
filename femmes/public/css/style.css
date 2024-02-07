@@ -172,9 +172,9 @@ section.swiper-slide {
 /* ========================================================================== */
 #slide2 .victoire-gif {
   width: 100%;
-  height: auto;
+  height: 900px;
   position: relative;
-  top: -200px;
+  top: -400px;
 }
 
 #slide2 header h1 {
