@@ -119,7 +119,7 @@ section.swiper-slide {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: auto;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 24px 0px;
   overflow: hidden;
 }
 
@@ -298,9 +298,41 @@ section.swiper-slide {
   background-color: var(--pink);
 }
 
-#rugbyball {
-  width: 300px;
-  height: 350px;
+#slide3-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide3-p1::before {
+  content: url("../img/illustrations/slide3/left-pink-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -8px;
+  left: 28px;
+  position: absolute;
+}
+
+#slide3-p1::after {
+  content: url("../img/illustrations/slide3/right-pink-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 34px;
+  position: absolute;
+}
+
+#black-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
+#pink-rugby {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ========================================================================== */
