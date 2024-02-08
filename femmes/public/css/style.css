@@ -147,7 +147,7 @@ section.swiper-slide {
 }
 
 #slide1-p1 {
-  padding-top: 19px
+  padding-top: 19px;
 }
 
 #logo-victoire {
@@ -235,11 +235,15 @@ section.swiper-slide {
 /* ========================================================================== */
 /* SLIDE 2 */
 /* ========================================================================== */
-#slide2 .victoire-gif {
-  width: 100%;
-  height: 900px;
+#slide2 {
   position: relative;
-  top: -400px;
+  overflow: hidden;
+}
+
+#orange-victoire {
+  width: 100%;
+  position: absolute;
+  top: 210px;
 }
 
 #slide2 header h1 {
@@ -248,6 +252,32 @@ section.swiper-slide {
 
 #slide2 header h1 span {
   color: var(--orange);
+}
+
+#slide2 p {
+  position: relative;
+  width: 260px;
+  margin: 20px auto 0;
+}
+
+#slide2 p::before {
+  content: url("../img/illustrations/slide2/left-orange-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -8px;
+  left: 40px;
+  position: absolute;
+}
+
+#slide2 p::after {
+  content: url("../img/illustrations/slide2/right-orange-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -5px;
+  right: 93px;
+  position: absolute;
 }
 
 /* ========================================================================== */
