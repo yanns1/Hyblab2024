@@ -607,46 +607,13 @@ img#cc {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-#loader-container {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#loader-img {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: black;
-  animation: wave 1s ease-in infinite;
+#logo-victoire-anime {
   display: block;
-  margin: auto;
-}
-
-@keyframes wave {
-  0% {
-    box-shadow:
-      0 0 0 0px rgba(20, 20, 20, 1),
-      0 0 0 20px rgba(20, 20, 20, 0.8),
-      0 0 0 40px rgba(20, 20, 20, 0.6),
-      0 0 0 60px rgba(20, 20, 20, 0.4),
-      0 0 0 80px rgba(20, 20, 20, 0.2);
-  }
-  100% {
-    box-shadow:
-      0 0 0 80px rgba(20, 20, 20, 0.2),
-      0 0 0 60px rgba(20, 20, 20, 0.4),
-      0 0 0 40px rgba(20, 20, 20, 0.6),
-      0 0 0 20px rgba(20, 20, 20, 0.8),
-      0 0 0 0px rgba(20, 20, 20, 1);
-  }
+  width: 103px;
 }
 
 /* ========================================================================== */
