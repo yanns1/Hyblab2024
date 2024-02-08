@@ -140,11 +140,14 @@ section.swiper-slide {
 /* ========================================================================== */
 #slide1 header {
   padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 #slide1 header h1 {
   color: var(--blue);
+}
+
+#slide1-p1 {
+  padding-top: 19px
 }
 
 #logo-victoire {
