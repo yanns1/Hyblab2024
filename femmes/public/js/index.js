@@ -128,6 +128,18 @@ window.onload = function () {
     scrollSwipers[i].on("toEdge", () => {
       mainSwiper.mousewheel.enable();
     });
+
+    scrollSwipers[i].on("progress", (swiper) => {
+      const header = swiper.hostEl.parentElement.querySelector("header");
+      if (swiper.progress === 0) {
+        header.setAttribute("style", "box-shadow: unset;");
+      } else {
+        header.setAttribute(
+          "style",
+          "box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);",
+        );
+      }
+    });
   }
 
   // Init first slide

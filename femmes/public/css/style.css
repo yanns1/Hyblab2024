@@ -119,7 +119,7 @@ section.swiper-slide {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: auto;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 24px 0px;
   overflow: hidden;
 }
 
@@ -138,23 +138,19 @@ section.swiper-slide {
 /* ========================================================================== */
 /* SLIDE 1 */
 /* ========================================================================== */
-#slide1 h1 {
+#slide1 header {
+  padding-top: 24px;
+}
+
+#slide1 header h1 {
   color: var(--blue);
 }
 
-#personnage-victoire {
-  width: 550px;
-  height: 422px;
+#slide1-p1 {
+  padding-top: 19px;
 }
 
-#sous-titre {
-  font-size: 22px;
-  line-height: 28px;
-  color: var(--blue);
-  text-align: center;
-}
-
-#logo-disposition {
+#logo-victoire {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -162,19 +158,92 @@ section.swiper-slide {
   width: 103px;
 }
 
-#paragraphe-slide1 {
+#slide1-img-container1 {
+  width: 100%;
+  height: calc(350.467px + 100px);
+  position: relative;
+}
+
+#blue-gloves {
+  position: absolute;
+  margin: 24px 0 0 35px;
+  top: 0;
+  left: 0;
+}
+
+#blue-bicycle {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+#slide1-p2 {
   color: var(--blue);
   font-size: 22px;
+  margin: 4rem 0;
+}
+
+#slide1-img-container2 {
+  width: 100%;
+  height: calc(169px + 300px);
+  position: relative;
+}
+
+#blue-ice-skate {
+  position: absolute;
+  margin: 0 0 0 35px;
+  top: 0;
+  left: 0;
+}
+
+#blue-arc {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+#blue-rugby {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+}
+
+#slide1-p3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#slide1-img-container3 {
+  width: 100%;
+  height: 293px;
+  position: relative;
+}
+
+#blue-whistle {
+  position: absolute;
+  margin: 0 0 0 35px;
+  top: 0;
+  left: 0;
+}
+
+#blue-target {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* ========================================================================== */
 /* SLIDE 2 */
 /* ========================================================================== */
-#slide2 .victoire-gif {
-  width: 100%;
-  height: auto;
+#slide2 {
   position: relative;
-  top: -200px;
+  overflow: hidden;
+}
+
+#orange-victoire {
+  width: 100%;
+  position: absolute;
+  top: 210px;
 }
 
 #slide2 header h1 {
@@ -183,6 +252,32 @@ section.swiper-slide {
 
 #slide2 header h1 span {
   color: var(--orange);
+}
+
+#slide2 p {
+  position: relative;
+  width: 260px;
+  margin: 20px auto 0;
+}
+
+#slide2 p::before {
+  content: url("../img/illustrations/slide2/left-orange-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -8px;
+  left: 40px;
+  position: absolute;
+}
+
+#slide2 p::after {
+  content: url("../img/illustrations/slide2/right-orange-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -5px;
+  right: 93px;
+  position: absolute;
 }
 
 /* ========================================================================== */
@@ -203,9 +298,41 @@ section.swiper-slide {
   background-color: var(--pink);
 }
 
-#rugbyball {
-  width: 300px;
-  height: 350px;
+#slide3-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide3-p1::before {
+  content: url("../img/illustrations/slide3/left-pink-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -8px;
+  left: 28px;
+  position: absolute;
+}
+
+#slide3-p1::after {
+  content: url("../img/illustrations/slide3/right-pink-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 34px;
+  position: absolute;
+}
+
+#black-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
+#pink-rugby {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ========================================================================== */
@@ -215,8 +342,15 @@ section.swiper-slide {
   color: var(--yellow);
 }
 
+/*
 #slide4 p:nth-child(2) {
   color: var(--yellow);
+}*/
+
+#slide4-p2 {
+  color: var(--yellow);
+  font-size: 22px;
+  margin: 4rem 0;
 }
 
 #slide4 .drawer h1 {
@@ -228,6 +362,12 @@ section.swiper-slide {
   width: 4px;
   height: 85px;
   background-color: var(--yellow);
+}
+
+#yellow-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
 }
 
 /* ========================================================================== */
@@ -261,6 +401,12 @@ section.swiper-slide {
   background-color: var(--red);
 }
 
+#red-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
 /* ========================================================================== */
 /* SLIDE 6 */
 /* ========================================================================== */
@@ -277,6 +423,39 @@ section.swiper-slide {
   width: 4px;
   height: 85px;
   background-color: var(--purple);
+}
+
+#purple-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
+#slide6-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide6-p1::before {
+  content: url("../img/illustrations/slide6/left-purple-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -10px;
+  left: 32px;
+  right: 5px;
+  position: absolute;
+}
+
+#slide6-p1::after{
+  content: url("../img/illustrations/slide6/right-purple-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 40px;
+  position: absolute;
 }
 
 /* ========================================================================== */
@@ -297,6 +476,38 @@ section.swiper-slide {
   background-color: var(--green);
 }
 
+#green-victoire1 {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
+#slide7-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide7-p1::before {
+  content: url("../img/illustrations/slide7/left-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -10px;
+  left: 22px;
+  right: 5px;
+  position: absolute;
+}
+
+#slide7-p1::after{
+  content: url("../img/illustrations/slide7/right-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 70px;
+  position: absolute;
+}
 /* ========================================================================== */
 /* SLIDE 8 */
 /* ========================================================================== */
@@ -312,6 +523,39 @@ section.swiper-slide {
   width: 4px;
   height: 85px;
   background-color: var(--green);
+}
+
+#green-victoire2 {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
+#slide8-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide8-p1::before {
+  content: url("../img/illustrations/slide8/left-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -10px;
+  left: 36px;
+  right: 5px;
+  position: absolute;
+}
+
+#slide8-p1::after{
+  content: url("../img/illustrations/slide8/right-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 120px;
+  position: absolute;
 }
 
 /* ========================================================================== */
@@ -338,14 +582,10 @@ section.swiper-slide {
   color: var(--black);
 }
 
-
-
-
 #slide10 {
   display: flex;
   justify-content: space-between;
 }
-
 
 .left-column,
 .right-column {
@@ -363,7 +603,7 @@ section.swiper-slide {
   margin-left: 30px;
 }
 
-.row-principal:after{
+.row-principal:after {
   display: table;
   clear: both;
 }
@@ -400,13 +640,12 @@ img#cc {
   height: auto;
 }
 
-#slide10 p{
+#slide10 p {
   text-align: center;
   font-size: 15px;
   font-family: Helvetica;
   padding: 0px 20px;
 }
-
 
 /*
 #slide10 {
@@ -445,7 +684,6 @@ img#cc {
 }
 
 */
-
 
 /* ========================================================================== */
 /* DRAWER */
@@ -548,46 +786,13 @@ img#cc {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-#loader-container {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#loader-img {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: black;
-  animation: wave 1s ease-in infinite;
+#logo-victoire-anime {
   display: block;
-  margin: auto;
-}
-
-@keyframes wave {
-  0% {
-    box-shadow:
-      0 0 0 0px rgba(20, 20, 20, 1),
-      0 0 0 20px rgba(20, 20, 20, 0.8),
-      0 0 0 40px rgba(20, 20, 20, 0.6),
-      0 0 0 60px rgba(20, 20, 20, 0.4),
-      0 0 0 80px rgba(20, 20, 20, 0.2);
-  }
-  100% {
-    box-shadow:
-      0 0 0 80px rgba(20, 20, 20, 0.2),
-      0 0 0 60px rgba(20, 20, 20, 0.4),
-      0 0 0 40px rgba(20, 20, 20, 0.6),
-      0 0 0 20px rgba(20, 20, 20, 0.8),
-      0 0 0 0px rgba(20, 20, 20, 1);
-  }
+  width: 103px;
 }
 
 /* ========================================================================== */

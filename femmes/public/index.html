@@ -7,16 +7,12 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
 
-    <title>Hyblab 2023</title>
+    <title>La Course Continue - Les Autres Possibles</title>
 
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.css"
     />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -38,10 +34,11 @@
     <!-- Le conteneur sert à vérouiller les proportions (aspect ratio) du contenu de la page (ici des slides) -->
     <div id="container">
       <section id="loader">
-        <div id="loader-container">
-          <span id="loader-img"></span>
-          <p id="loader-text">Veuillez patienter...</p>
-        </div>
+        <img
+          id="logo-victoire-anime"
+          src="animations/slide1/logo-victoire.gif"
+          alt="Logo Victoire noir, anmimé"
+        />
       </section>
 
       <div id="mySwiper" class="swiper main-swiper">
@@ -49,9 +46,9 @@
         <main class="swiper-wrapper" id="lottie">
           <section id="slide1" class="swiper-slide">
             <img
-              id="logo-disposition"
-              src="data/img/logo-Victoire-Black.svg"
-              alt="logo-Victoire-Black"
+              id="logo-victoire"
+              src="img/illustrations/slide1/logo-victoire.svg"
+              alt="Logo Victoire noir"
             />
             <header>
               <h1>La Course Continue</h1>
@@ -60,36 +57,51 @@
             <div class="swiper scroll-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <p>
+                  <p id="slide1-p1">
                     Les femmes dans le sport, c’est d’abord l’histoire d’un
                     <b>combat permanent</b>. Si aujourd’hui, on peut
                     s’émerveiller devant les performances et médailles de nos
                     athlètes préférées, c’est parce que de nombreuses femmes se
                     sont battues avant elles pour y arriver.
                   </p>
-                  <img src="data/img/BlueBicycle.svg" id="velo" alt="velo" />
-                  <img
-                    src="data/img/BlueGloves.svg"
-                    id="BlueGloves"
-                    alt="BlueGloves"
-                  />
 
-                  <p id="paragraphe-slide1">
+                  <div id="slide1-img-container1">
+                    <img
+                      src="img/illustrations/slide1/blue-gloves.svg"
+                      id="blue-gloves"
+                      alt="Gants de boxe bleu"
+                    />
+                    <img
+                      src="img/illustrations/slide1/blue-bicycle.svg"
+                      id="blue-bicycle"
+                      alt="Vélo bleu"
+                    />
+                  </div>
+
+                  <p id="slide1-p2">
                     Savais-tu que les femmes ont intégré certains sports de
                     combat il y a moins de 50 ans ?
                   </p>
-                  <img
-                    src="data/img/BlueIceSkate.svg"
-                    id="BlueIceSkate"
-                    alt="BlueIceSkate"
-                  />
-                  <img src="data/img/BlueArc.svg" id="bluearc" alt="bluearc" />
-                  <img
-                    src="data/img/BlueRugby.svg"
-                    id="BlueRugby"
-                    alt="BlueRugby"
-                  />
-                  <p>
+
+                  <div id="slide1-img-container2">
+                    <img
+                      src="img/illustrations/slide1/blue-ice-skate.svg"
+                      id="blue-ice-skate"
+                      alt="Patin à glace bleu"
+                    />
+                    <img
+                      src="img/illustrations/slide1/blue-arc.svg"
+                      id="blue-arc"
+                      alt="Arc bleu"
+                    />
+                    <img
+                      src="img/illustrations/slide1/blue-rugby.svg"
+                      id="blue-rugby"
+                      alt="Ballon de rugby bleu"
+                    />
+                  </div>
+
+                  <p id="slide1-p3">
                     Mais rassure-toi, les sportives sont bien décidées à ne pas
                     rester sur le banc de touche. L’égalité femmes-hommes n’est
                     pas encore la norme dans le milieu sportif, mais elle
@@ -99,16 +111,19 @@
                       dernières années…</b
                     >
                   </p>
-                  <img
-                    src="data/img/BlueWhistle.svg"
-                    id="BlueWhistle"
-                    alt="BlueWhistle"
-                  />
-                  <img
-                    src="data/img/BlueTarget.svg"
-                    id="BlueTarget"
-                    alt="BlueTarget"
-                  />
+
+                  <div id="slide1-img-container3">
+                    <img
+                      src="img/illustrations/slide1/blue-whistle.svg"
+                      id="blue-whistle"
+                      alt="Sifflet bleu"
+                    />
+                    <img
+                      src="img/illustrations/slide1/blue-target.svg"
+                      id="blue-target"
+                      alt="Cible de tir à l'arc bleu"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -116,8 +131,9 @@
 
           <section id="slide2" class="swiper-slide">
             <header>
-              <h1>Salut ! Moi c'est <span> Victoire </span></h1>
+              <h1>Salut ! Moi c'est <span>Victoire</span></h1>
             </header>
+
             <p>
               Salut ! Moi c’est Victoire ! Je vais t’accompagner tout au long de
               cette expérience. A travers cette plateforme interactive, tu vas
@@ -125,10 +141,11 @@
               magazine Les Autres Possibles, consacrée aux femmes dans le sport.
               Amuses-toi bien!
             </p>
+
             <img
-              src="data/animation/victoire1.gif"
-              class="victoire-gif"
-              alt="Animation Victoire"
+              src="animations/slide2/orange-victoire.gif"
+              id="orange-victoire"
+              alt="Animation Victoire en orange"
             />
           </section>
 
@@ -143,17 +160,20 @@
                 <div class="swiper-slide">
                   <div class="overlay"></div>
 
-                  <p>
+                  <p id="slide3-p1">
                     Un plan de féminisation? Ces termes sont sûrement très
                     vagues pour toi. Laisse-moi t’expliquer! Au départ, la
                     majorité des sports ne prenait pas vraiment en compte le
                     public féminin. C’est pourquoi, en 2006, le handball, le
                     basket-ball, le cyclisme et le football s’engagent à créer
-                    un plan dé féminisation dans leurs fédérations.
+                    un plan de féminisation dans leurs fédérations.
                   </p>
-                  <br />
-                  <br />
-                  <p>
+                  <img
+                    src="animations/slide3/black-victoire.gif"
+                    id="black-victoire"
+                    alt="Animation Victoire en noir"
+                  />
+                  <p id="slide3-p2">
                     Tu te demandes peut-être quels sont les objectifs? Il y en a
                     plusieurs, mais le but principal est d’adapter la discipline
                     sportive aux femmes et de faciliter l’accès des femmes aux
@@ -161,9 +181,9 @@
                     qu’en 2013 pour tous les sports!
                   </p>
                   <img
-                    src="data/img/RugbyBall.svg"
-                    id="rugbyball"
-                    alt="rugbyball"
+                    src="img/illustrations/slide3/pink-rugby.svg"
+                    id="pink-rugby"
+                    alt="Pink rugby"
                   />
 
                   <div class="drawer-container">
@@ -180,7 +200,7 @@
                         <div>
                           <img
                             class="portrait-photo"
-                            src="img/marilys-audran.png"
+                            src="img/portraits/marilys-audran.png"
                           />
                         </div>
                       </div>
@@ -205,7 +225,10 @@
 
                       <button class="drawer-button">
                         <div class="half-line"></div>
-                        <img class="chevron" src="img/chevron-rose.svg" />
+                        <img
+                          class="chevron"
+                          src="img/illustrations/slide3/pink-chevron.svg"
+                        />
                         <div class="half-line"></div>
                       </button>
                     </div>
@@ -233,11 +256,21 @@
                     En 2020, par exemple, il y avait 940 sportifs et 940
                     sportives.
                   </p>
-                  <p>
+                  <img
+                          src="animations/slide4/yellow-victoire.gif"
+                          id="yellow-victoire"
+                          alt="Animation Victoire en jaune"
+                  />
+                  <p id="slide4-p2">
                     Les JOJ sont destinés aux jeunes athlètes d’élite, âgés de
                     15 à 18 ans, et sont quasi-semblables aux Jeux olympiques
                     pour adultes.
                   </p>
+                  <img
+                          src="img/illustrations/slide4/yellow-arc.svg"
+                          id="yellowArc"
+                          alt="yellowArc"
+                  />
                   <p>
                     Leur but est de rassembler des jeunes du monde entier autour
                     de leurs passions, tout en intégrant une dimension éducative
@@ -248,9 +281,9 @@
                     été ajoutées.
                   </p>
                   <img
-                    src="data/img/yellowArc.svg"
-                    id="yellowArc"
-                    alt="yellowArc"
+                    src="img/illustrations/slide4/yellow-target.svg"
+                    id="yellowTarget"
+                    alt="yellowTarget"
                   />
 
                   <div class="drawer-container">
@@ -264,7 +297,10 @@
                           <h2>Eva Cabrerizo</h2>
                         </div>
                         <div>
-                          <img class="portrait-photo" src="img/cabrerizo.png" />
+                          <img
+                            class="portrait-photo"
+                            src="img/portraits/eva-cabrerizo.png"
+                          />
                         </div>
                       </div>
 
@@ -286,7 +322,10 @@
 
                       <button class="drawer-button">
                         <div class="half-line"></div>
-                        <img class="chevron" src="img/chevron-jaune.svg" />
+                        <img
+                          class="chevron"
+                          src="img/illustrations/slide4/yellow-chevron.svg"
+                        />
                         <div class="half-line"></div>
                       </button>
                     </div>
@@ -314,6 +353,11 @@
                     division s’appelle Ronda Rousey, une catcheuse américaine
                     originaire de Californie.
                   </p>
+                  <img
+                          src="animations/slide5/red-victoire.gif"
+                          id="red-victoire"
+                          alt="Animation Victoire en rouge"
+                  />
                   <p>
                     En 2013, elle a affronté Liz Carmouche pour la première
                     ceinture féminine de l’UFC, l’organisation américaine de
@@ -323,11 +367,10 @@
                     première française à remporter ce championnat.
                   </p>
                   <img
-                    src="data/img/boxing-gloves.svg"
+                    src="img/illustrations/slide5/red-gloves.svg"
                     id="boxing-gloves"
                     alt="boxing-gloves"
                   />
-
                   <div class="drawer-container">
                     <div class="drawer">
                       <p class="exemple">
@@ -339,7 +382,10 @@
                           <h2>Tévi Say</h2>
                         </div>
                         <div>
-                          <img class="portrait-photo" src="img/tevisay.png" />
+                          <img
+                            class="portrait-photo"
+                            src="img/portraits/tevi-say.png"
+                          />
                         </div>
                       </div>
 
@@ -363,7 +409,10 @@
 
                       <button class="drawer-button">
                         <div class="half-line"></div>
-                        <img class="chevron" src="img/chevron-rouge.svg" />
+                        <img
+                          class="chevron"
+                          src="img/illustrations/slide5/red-chevron.svg"
+                        />
                         <div class="half-line"></div>
                       </button>
                     </div>
@@ -384,18 +433,23 @@
                 <div class="swiper-slide">
                   <div class="overlay"></div>
 
-                  <p>
+                  <p id="slide6-p1">
                     Oups, je triche un peu en te donnant deux dates… C’est parce
                     que depuis quelques années, la parole se libère sur les
                     agressions que les femmes subissent dans le monde du sport.
                   </p>
+                  <img
+                          src="animations/slide6/purple-victoire.gif"
+                          id="purple-victoire"
+                          alt="Animation Victoire en violet"
+                  />
                   <p>
                     D’abord, c’est grâce à une enquête du média Disclose en
                     2019, qui révèle que de nombreuses affaires de violences
                     sexistes et sexuelles (VSS) ont été étouffées, et les
                     agresseurs protégés.
                   </p>
-                  <img src="img/patin1.svg" />
+                  <img src="img/illustrations/slide6/purple-ice-skate-up.svg" />
                   <p>
                     Tu te rends compte, les femmes doivent se battre pour
                     intégrer le milieu du sport, et en plus elles n’y sont même
@@ -408,7 +462,9 @@
                     d’écoute et d’information, le 3919. En cas d’urgence,
                     appelez le 17.
                   </p>
-                  <img src="img/patin2.svg" />
+                  <img
+                    src="img/illustrations/slide6/purple-ice-skate-down.svg"
+                  />
 
                   <div class="drawer-container">
                     <div class="drawer">
@@ -424,7 +480,7 @@
                         <div>
                           <img
                             class="portrait-photo"
-                            src="img/christele-bellet.png"
+                            src="img/portraits/christele-bellet.png"
                           />
                         </div>
                       </div>
@@ -451,7 +507,10 @@
 
                       <button class="drawer-button">
                         <div class="half-line"></div>
-                        <img class="chevron" src="img/chevron-violet.svg" />
+                        <img
+                          class="chevron"
+                          src="img/illustrations/slide6/purple-chevron.svg"
+                        />
                         <div class="half-line"></div>
                       </button>
                     </div>
@@ -472,7 +531,7 @@
                 <div class="swiper-slide">
                   <div class="overlay"></div>
 
-                  <p>
+                  <p id="slide7-p1">
                     Bonne nouvelle, les femmes reviennent dans la course ! Alors
                     qu’il avait disparu en 2010 par manque de financement, le
                     Tour de France féminin a fait son grand retour il y a deux
@@ -480,8 +539,11 @@
                     tendance de sacrifier le sport féminin avant le sport
                     masculin.
                   </p>
-                  <img src="img/slide7.svg" />
-
+                  <img
+                          src="animations/slide7/green-victoire1.gif"
+                          id="green-victoire1"
+                          alt="Animation Victoire en vert"
+                  />
                   <p>
                     En tout cas, c’est une étape importante pour le cyclisme
                     féminin, au sens propre comme figuré, car les coureuses vont
@@ -490,8 +552,10 @@
                     vainqueure gagne 50 000 €, c’est cinq fois moins que le
                     maillot jaune masculin…
                   </p>
-                  <img id="bike" src="img/bike.svg" />
-
+                  <img
+                    id="bike"
+                    src="img/illustrations/slide7/green-bike.svg"
+                  />
                   <div class="drawer-container">
                     <div class="drawer">
                       <p class="exemple">
@@ -505,7 +569,7 @@
                         <div>
                           <img
                             class="portrait-photo"
-                            src="img/chloe-michel.png"
+                            src="img/portraits/chloe-michel.png"
                           />
                         </div>
                       </div>
@@ -528,7 +592,10 @@
 
                       <button class="drawer-button">
                         <div class="half-line"></div>
-                        <img class="chevron" src="img/chevron-vert.svg" />
+                        <img
+                          class="chevron"
+                          src="img/illustrations/shared/green-chevron.svg"
+                        />
                         <div class="half-line"></div>
                       </button>
                     </div>
@@ -549,7 +616,7 @@
                 <div class="swiper-slide">
                   <div class="overlay"></div>
 
-                  <p id="text2022">
+                  <p id="slide8-p1">
                     Une femme arbitre une compétition internationale masculine.
                     Cela ne te paraît peut-être pas dérangeant et pourtant ce
                     n’est qu’en 2022 lors de la Coupe du Monde au Qatar, qu’une
@@ -557,13 +624,17 @@
                     centrale. C’est lors du match Allemagne - Costa Rica que
                     Stéphanie Frappart a pu écrire l’histoire.
                   </p>
-                  <img src="img/slide8.svg" />
+                  <img
+                          src="animations/slide8/green-victoire2.gif"
+                          id="green-victoire2"
+                          alt="Animation Victoire en vert"
+                  />
                   <p id="paragraph2022">
                     Son nom ne t’est sûrement pas familier. Elle a pourtant une
                     carrière impressionnante !
                   </p>
 
-                  <img src="img/Group 26.svg" />
+                  <img src="img/illustrations/slide8/green-hat.svg" />
                   <p>
                     Elle a été, par exemple, la première femme à arbitrer en
                     Ligue 1 masculine ou en Ligue des champions. Mais la
@@ -571,7 +642,7 @@
                     elles ne représentent que 4 % de l’effectif des arbitres en
                     France. C’est vraiment très peu !
                   </p>
-                  <img src="img/sifflet.svg" />
+                  <img src="img/illustrations/slide8/green-whistle.svg" />
 
                   <div class="drawer-container">
                     <div class="drawer">
@@ -586,7 +657,7 @@
                         <div>
                           <img
                             class="portrait-photo"
-                            src="img/clementinedubreuil.png"
+                            src="img/portraits/clementine-dubreuil.png"
                           />
                         </div>
                       </div>
@@ -612,7 +683,10 @@
 
                       <button class="drawer-button">
                         <div class="half-line"></div>
-                        <img class="chevron" src="img/chevron-vert.svg" />
+                        <img
+                          class="chevron"
+                          src="img/illustrations/shared/green-chevron.svg"
+                        />
                         <div class="half-line"></div>
                       </button>
                     </div>
@@ -657,7 +731,7 @@
               </div>
               <div>
                 <img src="data/img/EPJT.svg" id="EPJT" alt="EPJT"/>
-                <p>Annabelle Boos</p>
+                <p>Annabelle Boss</p>
               </div>
               <div>
                 <img src="data/img/images.svg" id="sciencepo" alt="sciencepo"/>
@@ -681,15 +755,13 @@
               </div>
               </div>
               <div>
-                <img src="data/img/HYBLAB.svg" id="HYBLAB" alt="HYBLAB"/>
+                <img src="img/credits/hyblab.svg" id="HYBLAB" alt="HYBLAB" />
               </div>
               <div>
-                <img src="data/img/cc.svg" id="cc" alt="cc"/>
+                <img src="img/credits/cc.svg" id="cc" alt="cc" />
               </div>
-          
-          </div> 
+            </div>
           </section>
-          
         </main>
 
         <div class="swiper-pagination"></div>
