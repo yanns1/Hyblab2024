@@ -431,6 +431,33 @@ section.swiper-slide {
   margin: 16px auto;
 }
 
+#slide6-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide6-p1::before {
+  content: url("../img/illustrations/slide6/left-purple-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -10px;
+  left: 32px;
+  right: 5px;
+  position: absolute;
+}
+
+#slide6-p1::after{
+  content: url("../img/illustrations/slide6/right-purple-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 40px;
+  position: absolute;
+}
+
 /* ========================================================================== */
 /* SLIDE 7 */
 /* ========================================================================== */
@@ -455,6 +482,32 @@ section.swiper-slide {
   margin: 16px auto;
 }
 
+#slide7-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide7-p1::before {
+  content: url("../img/illustrations/slide7/left-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -10px;
+  left: 22px;
+  right: 5px;
+  position: absolute;
+}
+
+#slide7-p1::after{
+  content: url("../img/illustrations/slide7/right-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 70px;
+  position: absolute;
+}
 /* ========================================================================== */
 /* SLIDE 8 */
 /* ========================================================================== */
@@ -476,6 +529,33 @@ section.swiper-slide {
   width: 80%;
   display: block;
   margin: 16px auto;
+}
+
+#slide8-p1 {
+  width: 260px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#slide8-p1::before {
+  content: url("../img/illustrations/slide8/left-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  top: -10px;
+  left: 36px;
+  right: 5px;
+  position: absolute;
+}
+
+#slide8-p1::after{
+  content: url("../img/illustrations/slide8/right-green-quote.svg");
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  bottom: -8px;
+  right: 120px;
+  position: absolute;
 }
 
 /* ========================================================================== */
