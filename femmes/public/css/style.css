@@ -626,6 +626,12 @@ section.swiper-slide {
   position: absolute;
 }
 
+#victoire-hand {
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
 
 /* ========================================================================== */
 /* SLIDE 10 */
