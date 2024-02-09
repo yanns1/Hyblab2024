@@ -599,6 +599,12 @@ section.swiper-slide {
   position: relative;
 }
 
+#slide8-p2 {
+  color: var(--green);
+  font-size: 22px;
+  margin: 4rem 0;
+}
+
 #slide8-p1::before {
   content: url("../img/illustrations/slide8/left-green-quote.svg");
   display: inline-block;
@@ -660,6 +666,12 @@ section.swiper-slide {
   height: 22px;
   right: 80px;
   position: absolute;
+}
+
+#victoire-hand {
+  width: 40%;
+  display: block;
+  margin: auto;
 }
 
 
