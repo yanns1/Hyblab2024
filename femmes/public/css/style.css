@@ -413,14 +413,6 @@ section.swiper-slide {
   color: var(--red);
 }
 
-#slide5 > p {
-  color: var(--red);
-  font-size: 22px;
-  line-height: 28px;
-  text-align: center;
-  padding-top: 20px;
-}
-
 #slide5 .tevi {
   position: relative;
   align-content: center;
@@ -455,7 +447,7 @@ section.swiper-slide {
   width: 25px;
   height: 22px;
   top: -8px;
-  left: 36px;
+  left: 34px;
   position: absolute;
 }
 
@@ -464,9 +456,25 @@ section.swiper-slide {
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -8px;
-  right: 39px;
+  bottom: -6px;
+  right: 118px;
   position: absolute;
+}
+
+#red-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
+#slide5-p2 {
+  width: 260px;
+  margin: 20px auto;
+}
+
+#red-gloves {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ========================================================================== */
