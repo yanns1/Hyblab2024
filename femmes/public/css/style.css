@@ -342,8 +342,15 @@ section.swiper-slide {
   color: var(--yellow);
 }
 
+/*
 #slide4 p:nth-child(2) {
   color: var(--yellow);
+}*/
+
+#slide4-p2 {
+  color: var(--yellow);
+  font-size: 22px;
+  margin: 4rem 0;
 }
 
 #slide4 .drawer h1 {
@@ -355,6 +362,12 @@ section.swiper-slide {
   width: 4px;
   height: 85px;
   background-color: var(--yellow);
+}
+
+#yellow-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
 }
 
 /* ========================================================================== */
@@ -388,6 +401,12 @@ section.swiper-slide {
   background-color: var(--red);
 }
 
+#red-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
 /* ========================================================================== */
 /* SLIDE 6 */
 /* ========================================================================== */
@@ -404,6 +423,12 @@ section.swiper-slide {
   width: 4px;
   height: 85px;
   background-color: var(--purple);
+}
+
+#purple-victoire {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
 }
 
 /* ========================================================================== */
@@ -424,6 +449,12 @@ section.swiper-slide {
   background-color: var(--green);
 }
 
+#green-victoire1 {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
+}
+
 /* ========================================================================== */
 /* SLIDE 8 */
 /* ========================================================================== */
@@ -439,6 +470,12 @@ section.swiper-slide {
   width: 4px;
   height: 85px;
   background-color: var(--green);
+}
+
+#green-victoire2 {
+  width: 80%;
+  display: block;
+  margin: 16px auto;
 }
 
 /* ========================================================================== */
