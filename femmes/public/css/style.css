@@ -680,9 +680,10 @@ section.swiper-slide {
 }
 
 #victoire-hand {
-  width: 40%;
-  display: block;
-  margin: auto;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* ========================================================================== */
@@ -697,6 +698,15 @@ section.swiper-slide {
   justify-content: space-between;
 }
 
+.column-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 86%;
+  align-items: left;
+  align-items: center;
+}
+
 .left-column,
 .right-column {
   display: flex;
@@ -707,42 +717,36 @@ section.swiper-slide {
 
 .left-column {
   float: left;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 180px;
-  margin-left: 30px;
+  align-items: center;
+  /*align-items: flex-start;*/
+  width: 50%;
 }
 
-.row-principal:after {
-  display: table;
-  clear: both;
-}
 
 .right-column {
   float: right;
   justify-content: flex-end;
-  align-items: flex-end;
-  width: 180px;
-  padding-right: 10px;
+  align-items: center;
+  /*align-items: flex-end;*/
+  width: 50%;
 }
 
 .left-column div,
 .right-column div {
-  margin-bottom: 20px;
   text-align: center;
   position: relative;
 }
 
-img#LAP {
-  margin-left: 30px;
+.logohylab {
+  display: inline-block;
 }
 
-img#HYBLAB {
-  margin-left: 85px;
+.row-principal {
+  display: inline-block;
 }
 
-img#cc {
-  margin-left: 160px;
+.logocredit {
+  display: inline-block;
 }
 
 #slide10 img {
@@ -757,43 +761,6 @@ img#cc {
   padding: 0px 20px;
 }
 
-/*
-#slide10 {
-  display: flex;
-  flex-wrap: wrap;
-   
-}
-
-#expo,
-#LAP,
-#Polytech{
-  order: 1;
-  flex: 0 0 15%; 
-
-}
-
-#EPJT{
-  order: 2;
-  flex: 0 0 51%; 
-}
-
-#AGR ,
-#sciencepo{
-  order: 3;
-  flex: 0 0 50%; 
-}
-
-#HYBLAB{
-  order: 4;
-  flex: 0 0 100%; 
-}
-
-#cc {
-  order: 5;
-  flex: 0 0 100%; 
-}
-
-*/
 
 /* ========================================================================== */
 /* QUOTES */
