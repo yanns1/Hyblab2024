@@ -728,7 +728,8 @@ section.swiper-slide {
 
 .left-column {
   float: left;
-  align-items: flex-start;
+  align-items: center;
+  /*align-items: flex-start;*/
   width: 50%;
 }
 
@@ -736,7 +737,8 @@ section.swiper-slide {
 .right-column {
   float: right;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
+  /*align-items: flex-end;*/
   width: 50%;
 }
 
@@ -770,43 +772,6 @@ section.swiper-slide {
   padding: 0px 20px;
 }
 
-/*
-#slide10 {
-  display: flex;
-  flex-wrap: wrap;
-   
-}
-
-#expo,
-#LAP,
-#Polytech{
-  order: 1;
-  flex: 0 0 15%; 
-
-}
-
-#EPJT{
-  order: 2;
-  flex: 0 0 51%; 
-}
-
-#AGR ,
-#sciencepo{
-  order: 3;
-  flex: 0 0 50%; 
-}
-
-#HYBLAB{
-  order: 4;
-  flex: 0 0 100%; 
-}
-
-#cc {
-  order: 5;
-  flex: 0 0 100%; 
-}
-
-*/
 
 /* ========================================================================== */
 /* DRAWER */
