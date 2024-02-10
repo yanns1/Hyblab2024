@@ -136,7 +136,7 @@ window.onload = function () {
       } else {
         header.setAttribute(
           "style",
-          "box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);",
+          "box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.2);",
         );
       }
     });
