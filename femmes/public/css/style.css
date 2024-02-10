@@ -860,6 +860,10 @@ img#cc {
   margin: 0 0 10px 0;
 }
 
+.exemple{
+  font-style: italic;
+}
+
 .drawer .header-container {
   display: flex;
   flex-direction: row;
