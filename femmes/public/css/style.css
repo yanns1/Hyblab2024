@@ -41,7 +41,7 @@
   --vw: calc(100 * 3vh / 4);
 
   /* Else */
-  --drawer-height: calc(var(--vh) - 80px);
+  --drawer-height: calc(0.8 * var(--vh));
   --drawer-width: calc(100% - 60px);
   --drawer-button-width: 30px;
 }
@@ -287,17 +287,6 @@ section.swiper-slide {
   color: var(--pink);
 }
 
-#slide3 .drawer h1 {
-  color: var(--pink);
-  padding-left: 20px;
-}
-
-#slide3 .drawer-button .half-line {
-  width: 4px;
-  height: 85px;
-  background-color: var(--pink);
-}
-
 #slide3-p1 {
   width: 260px;
   margin: 20px auto 0;
@@ -338,6 +327,10 @@ section.swiper-slide {
 #pink-rugby {
   display: block;
   margin: 0 auto;
+}
+
+#slide3 .drawer-button .half-line {
+  background-color: var(--pink);
 }
 
 /* ========================================================================== */
@@ -385,17 +378,6 @@ section.swiper-slide {
   margin: 20px auto;
 }
 
-#slide4 .drawer h1 {
-  color: var(--yellow);
-  padding-left: 20px;
-}
-
-#slide4 .drawer-button .half-line {
-  width: 4px;
-  height: 85px;
-  background-color: var(--yellow);
-}
-
 #yellow-victoire {
   width: 80%;
   display: block;
@@ -404,6 +386,10 @@ section.swiper-slide {
 
 #yellow-arc {
   margin: 0 0 0 35px;
+}
+
+#slide4 .drawer-button .half-line {
+  background-color: var(--yellow);
 }
 
 /* ========================================================================== */
@@ -416,17 +402,6 @@ section.swiper-slide {
 #slide5 .tevi {
   position: relative;
   align-content: center;
-}
-
-#slide5 .drawer h1 {
-  color: var(--red);
-  padding-left: 20px;
-}
-
-#slide5 .drawer-button .half-line {
-  width: 4px;
-  height: 85px;
-  background-color: var(--red);
 }
 
 #red-victoire {
@@ -477,22 +452,15 @@ section.swiper-slide {
   margin: 0 auto;
 }
 
+#slide5 .drawer-button .half-line {
+  background-color: var(--red);
+}
+
 /* ========================================================================== */
 /* SLIDE 6 */
 /* ========================================================================== */
 #slide6 header h1 {
   color: var(--purple);
-}
-
-#slide6 .drawer h1 {
-  color: var(--purple);
-  padding-left: 20px;
-}
-
-#slide6 .drawer-button .half-line {
-  width: 4px;
-  height: 85px;
-  background-color: var(--purple);
 }
 
 #purple-victoire {
@@ -540,22 +508,15 @@ section.swiper-slide {
   margin: 0 auto;
 }
 
+#slide6 .drawer-button .half-line {
+  background-color: var(--purple);
+}
+
 /* ========================================================================== */
 /* SLIDE 7 */
 /* ========================================================================== */
-
 #slide7 header h1 {
   color: var(--green);
-}
-#slide7 .drawer h1 {
-  color: var(--green);
-  padding-left: 20px;
-}
-
-#slide7 .drawer-button .half-line {
-  width: 4px;
-  height: 85px;
-  background-color: var(--green);
 }
 
 #green-victoire1 {
@@ -614,21 +575,15 @@ section.swiper-slide {
   bottom: -24px;
 }
 
+#slide7 .drawer-button .half-line {
+  background-color: var(--green);
+}
+
 /* ========================================================================== */
 /* SLIDE 8 */
 /* ========================================================================== */
 #slide8 header h1 {
   color: var(--green);
-}
-#slide8 .drawer h1 {
-  color: var(--green);
-  padding-left: 20px;
-}
-
-#slide8 .drawer-button .half-line {
-  width: 4px;
-  height: 85px;
-  background-color: var(--green);
 }
 
 #green-victoire2 {
@@ -684,26 +639,20 @@ section.swiper-slide {
   margin: 0 0 0 35px;
 }
 
+#slide8 .drawer-button .half-line {
+  background-color: var(--green);
+}
+
 /* ========================================================================== */
 /* SLIDE 9 */
 /* ========================================================================== */
 #slide9 header h1 {
   color: var(--orange);
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-
-#bilan-paragraph {
-  color: var(--orange);
-  text-align: center;
-  font-size: 22px;
-  line-height: 28px;
-  padding-top: 20px;
 }
 
 #slide9-p1 {
   width: 260px;
-  margin: 20px auto 0;
+  margin: 20px auto 16px;
   position: relative;
 }
 
@@ -713,8 +662,14 @@ section.swiper-slide {
   width: 25px;
   height: 22px;
   top: -8px;
-  left: 28px;
+  left: 26px;
   position: absolute;
+}
+
+#slide9-p2 {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #slide9-p2::after {
@@ -722,8 +677,17 @@ section.swiper-slide {
   display: inline-block;
   width: 25px;
   height: 22px;
-  right: 80px;
+  bottom: -6px;
+  right: 116px;
   position: absolute;
+}
+
+#slide9-p3 {
+  color: var(--orange);
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+  padding-top: 20px;
 }
 
 #victoire-hand {
@@ -860,6 +824,12 @@ img#cc {
   width: 100%;
   background-color: var(--white);
   z-index: 20;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 4% 8% 4% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .drawer-button {
@@ -880,44 +850,60 @@ img#cc {
   gap: 8px;
 }
 
-.drawer .exemple {
-  padding-top: 8px;
+.drawer-button .half-line {
+  width: 4px;
+  height: 85px;
 }
-.drawer .div-header {
+
+.drawer .exemple {
+  padding: 0;
+  margin: 0;
+}
+
+.drawer .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 20px;
-  align-items: start;
-  padding-top: 25px;
+  padding: 0;
+  margin: 0;
 }
-.drawer .div1 {
+
+.drawer header {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer h1 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .drawer h2 {
-  padding-left: 20px;
+  padding: 0;
+  text-align: left;
   font-size: medium;
 }
 
-.drawer p {
-  font-size: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+.drawer .photo-portrait {
+  display: block;
+  border-radius: 10px;
 }
-.drawer .text1 {
-  padding-top: 20px;
+
+.drawer p {
+  padding: 0;
+  margin: 0;
+}
+
+.drawer-p2 {
+  padding: 0;
+  margin: 0;
   font-style: italic;
   font-weight: bold;
 }
 
-.drawer .text2 {
-  padding-top: 30px;
-}
-.drawer .portrait-photo {
-  border-radius: 10px;
-}
 /* Bon article pour comprendre comment z-index marche: */
 /* https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ */
 .overlay {
