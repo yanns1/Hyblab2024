@@ -691,9 +691,10 @@ section.swiper-slide {
 }
 
 #victoire-hand {
-  width: 40%;
-  display: block;
-  margin: auto;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* ========================================================================== */
@@ -859,9 +860,6 @@ section.swiper-slide {
 .drawer .exemple {
   padding: 0;
   margin: 0 0 10px 0;
-}
-
-.exemple{
   font-style: italic;
 }
 
