@@ -255,29 +255,28 @@ section.swiper-slide {
 }
 
 #slide2 p {
-  position: relative;
   width: 260px;
   margin: 20px auto 0;
 }
 
-#slide2 p::before {
+#slide2-p1-left-quote:before {
   content: url("../img/illustrations/slide2/left-orange-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -8px;
-  left: 40px;
-  position: absolute;
 }
 
-#slide2 p::after {
+#slide2-p1-right-quote:before {
   content: url("../img/illustrations/slide2/right-orange-quote.svg");
+  top: 0;
+  left: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -5px;
-  right: 93px;
-  position: absolute;
 }
 
 /* ========================================================================== */
@@ -290,27 +289,26 @@ section.swiper-slide {
 #slide3-p1 {
   width: 260px;
   margin: 20px auto 0;
-  position: relative;
 }
 
-#slide3-p1::before {
+#slide3-p1-left-quote:before {
   content: url("../img/illustrations/slide3/left-pink-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -8px;
-  left: 28px;
-  position: absolute;
 }
 
-#slide3-p1::after {
+#slide3-p1-right-quote:before {
   content: url("../img/illustrations/slide3/right-pink-quote.svg");
+  top: 0;
+  left: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -8px;
-  right: 34px;
-  position: absolute;
 }
 
 #slide3-p2 {
@@ -343,27 +341,26 @@ section.swiper-slide {
 #slide4-p1 {
   width: 260px;
   margin: 20px auto 0;
-  position: relative;
 }
 
-#slide4-p1::before {
+#slide4-p1-left-quote:before {
   content: url("../img/illustrations/slide4/left-yellow-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -8px;
-  left: 32px;
-  position: absolute;
 }
 
-#slide4-p1::after {
+#slide4-p1-right-quote:before {
   content: url("../img/illustrations/slide4/right-yellow-quote.svg");
+  top: 0;
+  left: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -8px;
-  right: 118px;
-  position: absolute;
 }
 
 #slide4-p2 {
@@ -413,27 +410,26 @@ section.swiper-slide {
 #slide5-p1 {
   width: 260px;
   margin: 20px auto 0;
-  position: relative;
 }
 
-#slide5-p1::before {
+#slide5-p1-left-quote:before {
   content: url("../img/illustrations/slide5/left-red-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -8px;
-  left: 34px;
-  position: absolute;
 }
 
-#slide5-p1::after {
+#slide5-p1-right-quote:before {
   content: url("../img/illustrations/slide5/right-red-quote.svg");
+  top: 0;
+  left: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -6px;
-  right: 118px;
-  position: absolute;
 }
 
 #red-victoire {
@@ -472,28 +468,26 @@ section.swiper-slide {
 #slide6-p1 {
   width: 260px;
   margin: 20px auto 0;
-  position: relative;
 }
 
-#slide6-p1::before {
+#slide6-p1-left-quote:before {
   content: url("../img/illustrations/slide6/left-purple-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -8px;
-  left: 28px;
-  right: 5px;
-  position: absolute;
 }
 
-#slide6-p1::after {
+#slide6-p1-right-quote:before {
   content: url("../img/illustrations/slide6/right-purple-quote.svg");
+  top: 0;
+  left: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -6px;
-  right: 36px;
-  position: absolute;
 }
 
 #slide6-p2,
@@ -528,28 +522,26 @@ section.swiper-slide {
 #slide7-p1 {
   width: 260px;
   margin: 20px auto 0;
-  position: relative;
 }
 
-#slide7-p1::before {
+#slide7-p1-left-quote:before {
   content: url("../img/illustrations/slide7/left-green-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -8px;
-  left: 22px;
-  right: 5px;
-  position: absolute;
 }
 
-#slide7-p1::after {
+#slide7-p1-right-quote:before {
   content: url("../img/illustrations/slide7/right-green-quote.svg");
+  top: 0;
+  left: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -6px;
-  right: 72px;
-  position: absolute;
 }
 
 #green-victoire {
@@ -595,27 +587,26 @@ section.swiper-slide {
 #slide8-p1 {
   width: 260px;
   margin: 20px auto 0;
-  position: relative;
 }
 
-#slide8-p1::before {
+#slide8-p1-left-quote:before {
   content: url("../img/illustrations/slide8/left-green-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -8px;
-  left: 34px;
-  position: absolute;
 }
 
-#slide8-p1::after {
+#slide8-p1-right-quote:before {
   content: url("../img/illustrations/slide8/right-green-quote.svg");
+  top: 0;
+  left: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -6px;
-  right: 120px;
-  position: absolute;
 }
 
 #slide8-p2 {
@@ -653,33 +644,31 @@ section.swiper-slide {
 #slide9-p1 {
   width: 260px;
   margin: 20px auto 16px;
-  position: relative;
-}
-
-#slide9-p1::before {
-  content: url("../img/illustrations/slide9/left-orange-quote.svg");
-  display: inline-block;
-  width: 25px;
-  height: 22px;
-  top: -8px;
-  left: 26px;
-  position: absolute;
 }
 
 #slide9-p2 {
   width: 260px;
   margin: 0 auto;
-  position: relative;
 }
 
-#slide9-p2::after {
-  content: url("../img/illustrations/slide9/right-orange-quote.svg");
+#slide9-p1-left-quote:before {
+  content: url("../img/illustrations/slide9/left-orange-quote.svg");
+  bottom: 2px;
+  right: 8px;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -6px;
-  right: 116px;
+}
+
+#slide9-p2-right-quote:before {
+  content: url("../img/illustrations/slide9/right-orange-quote.svg");
+  top: 0;
+  left: 8px;
   position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 22px;
 }
 
 #slide9-p3 {
@@ -772,6 +761,13 @@ section.swiper-slide {
   padding: 0px 20px;
 }
 
+
+/* ========================================================================== */
+/* QUOTES */
+/* ========================================================================== */
+.quote-span {
+  position: relative;
+}
 
 /* ========================================================================== */
 /* DRAWER */
