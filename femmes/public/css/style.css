@@ -634,7 +634,7 @@ section.swiper-slide {
 #green-victoire2 {
   width: 80%;
   display: block;
-  margin: 16px auto;
+  margin: 16px auto 0;
 }
 
 #slide8-p1 {
@@ -643,20 +643,13 @@ section.swiper-slide {
   position: relative;
 }
 
-#slide8-p2 {
-  color: var(--green);
-  font-size: 22px;
-  margin: 4rem 0;
-}
-
 #slide8-p1::before {
   content: url("../img/illustrations/slide8/left-green-quote.svg");
   display: inline-block;
   width: 25px;
   height: 22px;
-  top: -10px;
-  left: 36px;
-  right: 5px;
+  top: -8px;
+  left: 34px;
   position: absolute;
 }
 
@@ -665,9 +658,30 @@ section.swiper-slide {
   display: inline-block;
   width: 25px;
   height: 22px;
-  bottom: -8px;
+  bottom: -6px;
   right: 120px;
   position: absolute;
+}
+
+#slide8-p2 {
+  color: var(--green);
+  font-size: 22px;
+  margin: 4rem auto;
+}
+
+#green-hat {
+  display: block;
+  margin: 0 0 24px 35px;
+}
+
+#slide8-p3 {
+  width: 260px;
+  margin: 0 auto;
+}
+
+#green-whistle {
+  display: block;
+  margin: 0 0 0 35px;
 }
 
 /* ========================================================================== */
