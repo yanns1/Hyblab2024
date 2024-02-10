@@ -147,7 +147,8 @@ section.swiper-slide {
 }
 
 #slide1-p1 {
-  padding-top: 19px;
+  width: 260px;
+  margin: 19px auto 0;
 }
 
 #logo-victoire {
@@ -180,7 +181,8 @@ section.swiper-slide {
 #slide1-p2 {
   color: var(--blue);
   font-size: 22px;
-  margin: 4rem 0;
+  width: 300px;
+  margin: 4rem auto;
 }
 
 #slide1-img-container2 {
@@ -209,6 +211,8 @@ section.swiper-slide {
 }
 
 #slide1-p3 {
+  width: 260px;
+  margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -722,7 +726,6 @@ section.swiper-slide {
   width: 50%;
 }
 
-
 .right-column {
   float: right;
   justify-content: flex-end;
@@ -760,7 +763,6 @@ section.swiper-slide {
   font-family: Helvetica;
   padding: 0px 20px;
 }
-
 
 /* ========================================================================== */
 /* QUOTES */
